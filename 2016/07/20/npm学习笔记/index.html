@@ -29,7 +29,9 @@
 
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
+  
+  <link href="https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -69,7 +71,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+  
+
+<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
@@ -92,17 +96,17 @@
 
 
 
-<meta name="description" content="npm简介npm 是 2009 年开始的一个 javascript模块管理工具，也是最流行的代码共享平台之一。2013 年 npm 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月 npm官方（http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there ）发了一份统计，截止 4">
+<meta name="description" content="本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="npm学习笔记">
 <meta property="og:url" content="http://yoursite.com/2016/07/20/npm学习笔记/index.html">
 <meta property="og:site_name" content="OYsun Blog">
-<meta property="og:description" content="npm简介npm 是 2009 年开始的一个 javascript模块管理工具，也是最流行的代码共享平台之一。2013 年 npm 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月 npm官方（http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there ）发了一份统计，截止 4">
+<meta property="og:description" content="本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。">
 <meta property="og:image" content="http://yoursite.com/2016/07/20/npm学习笔记/npm.png">
 <meta property="og:updated_time" content="2016-09-09T16:00:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="npm学习笔记">
-<meta name="twitter:description" content="npm简介npm 是 2009 年开始的一个 javascript模块管理工具，也是最流行的代码共享平台之一。2013 年 npm 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月 npm官方（http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there ）发了一份统计，截止 4">
+<meta name="twitter:description" content="本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。">
 <meta name="twitter:image" content="http://yoursite.com/2016/07/20/npm学习笔记/npm.png">
 
 
@@ -134,6 +138,16 @@
   
 
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?15e576cf8217996ec311f2ab21a3618d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -344,6 +358,11 @@
           
 
           
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              </span>
+          
         </div>
       </header>
     
@@ -355,11 +374,11 @@
       
 
       
-        <img src="/2016/07/20/npm学习笔记/npm.png" alt="npm学习笔记" title="npm学习笔记">
-<hr>
-<h2 id="npm简介"><a href="#npm简介" class="headerlink" title="npm简介"></a><center>npm简介</center></h2><blockquote><p>npm 是 2009 年开始的一个 javascript<br>模块管理工具，也是最流行的代码共享平台之一。2013 年 npm 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月 npm官方（<a href="http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there" target="_blank" rel="external">http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there</a> ）发了一份统计，截止 4 月全球估计有 4 百万用户使用 npm，并且这个数字每年会翻一倍。</p>
+        <img src="/2016/07/20/npm学习笔记/npm.png" alt="npm.png" title="">
+<blockquote><p>本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。</p>
 </blockquote>
-<p>  NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上<br>很多问题，常见的使用场景有以下几种：</p>
+<a id="more"></a>
+<h2 id="npm简介"><a href="#npm简介" class="headerlink" title="npm简介"></a><center>npm简介</center></h2><p>npm 是 2009 年开始的一个 javascript模块管理工具，也是最流行的代码共享平台之一。2013 年 npm<!--more--> 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月npm官方（<a href="http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there" target="_blank" rel="external">http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there</a> ）发了一份统计，截止 4 月全球估计有 4 百万用户使用 npm，并且这个数字每年会翻一倍。NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上<br>很多问题，常见的使用场景有以下几种：</p>
 <ul>
 <li>允许用户从NPM服务器下载别人编写的第三方包到本地使用。</li>
 <li>允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。</li>
@@ -559,6 +578,22 @@
     <div>
       
         
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/zhifubao.png" alt="欧阳森 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
     </div>
@@ -583,27 +618,10 @@
 
     <div class="post-spread">
       
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-  <a class="jiathis_button_tsina"></a>
-  <a class="jiathis_button_tqq"></a>
-  <a class="jiathis_button_weixin"></a>
-  <a class="jiathis_button_cqq"></a>
-  <a class="jiathis_button_douban"></a>
-  <a class="jiathis_button_renren"></a>
-  <a class="jiathis_button_qzone"></a>
-  <a class="jiathis_button_kaixin001"></a>
-  <a class="jiathis_button_copy"></a>
-  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
-  <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-  var jiathis_config={
-    hideMore:false
-  }
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
 </script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
 
       
     </div>
@@ -713,15 +731,6 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://weibo.com/3802300078/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
                 <a href="http://www.zcool.com.cn/u/13297081" target="_blank" title="站酷">
                   
                     <i class="fa fa-fw fa-globe"></i>
@@ -737,6 +746,24 @@
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              栖往之地
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://isux.tencent.com/" title="腾讯ISUX" target="_blank">腾讯ISUX</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://ued.ctrip.com/blog/" title="携程UED" target="_blank">携程UED</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
@@ -787,6 +814,22 @@
 
         
 
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人数</span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
+  
+  
+</div>
+
+
+
         
       </div>
     </footer>
@@ -817,22 +860,22 @@
 
 
   
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
 
   
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
 
   
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/velocity/1.2.1/velocity.min.js"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/velocity/1.2.1/velocity.ui.min.js"></script>
 
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.js"></script>
 
 
   
@@ -1027,6 +1070,9 @@
   
 
   
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
 
 </body>
 </html>
