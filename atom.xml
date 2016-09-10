@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>OYsun Blog</title>
+  <subtitle>影视动画爱好者 前端开发小菜鸟</subtitle>
+  <link href="/atom.xml" rel="self"/>
   
+  <link href="http://yoursite.com/"/>
+  <updated>2016-09-09T16:00:00.000Z</updated>
+  <id>http://yoursite.com/</id>
   
+  <author>
+    <name>欧阳森</name>
     
-    <entry>
-      <title><![CDATA[npm学习笔记]]></title>
-      <url>http://yoursite.com/2016/01/02/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<p><span style="color:#931F1D;background-color:#FF5D51">本文内容为自己在网上学习和总结，手写代码和排版不易，转载请附上本文链接，谢谢!</span><br>引言：本文记录一些npm的使用技巧，主要包括自己常用的命</p>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm学习笔记</title>
+    <link href="http://yoursite.com/2016/01/02/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/01/02/npm学习笔记/</id>
+    <published>2016-01-01T16:00:00.000Z</published>
+    <updated>2016-09-09T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><span style="color:#931F1D;background-color:#FF5D51">本文内容为自己在网上学习和总结，手写代码和排版不易，转载请附上本文链接，谢谢!</span><br>引言：本文记录一些npm的使用技巧，主要包括自己常用的命</p>
 <hr>
 <h2 id="1-npm简介"><a href="#1-npm简介" class="headerlink" title="1.npm简介"></a><center>1.npm简介</center></h2><p>  NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上<br>很多问题，常见的使用场景有以下几种：</p>
 <ul>
@@ -176,8 +192,19 @@
 </blockquote>
 <p><span style="color:#931F1D;background-color:#FF5D51">一旦安装了某个模块，就可以在代码中用require命令加载这个模块。</span></p>
 ]]></content>
-    </entry>
     
+    <summary type="html">
+    
+      &lt;p&gt;&lt;span style=&quot;color:#931F1D;background-color:#FF5D51&quot;&gt;本文内容为自己在网上学习和总结，手写代码和排版不易，转载请附上本文链接，谢谢!&lt;/span&gt;&lt;br&gt;引言：本文记录一些npm的使用技巧，主要包括自己常用的命&lt;/p&gt;
+&lt;
+    
+    </summary>
+    
+      <category term="前端构建工具" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="前端构建工具" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
-  
-</search>
+</feed>
