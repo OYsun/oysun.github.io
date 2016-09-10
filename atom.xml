@@ -22,10 +22,9 @@
     <published>2016-07-19T16:00:00.000Z</published>
     <updated>2016-09-09T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2016/07/20/npm学习笔记/npm.png" alt="npm.png" title="">
-<p><span style="color:#931F1D;background-color:#f2dede;font-size:18px;">总结，手写代码和排版不易，转载请附上本文链接，谢谢!</span></p>
+    <content type="html"><![CDATA[<img src="/2016/07/20/npm学习笔记/npm.png" alt="npm学习笔记" title="npm学习笔记">
 <hr>
-<h2 id="npm简介"><a href="#npm简介" class="headerlink" title="npm简介"></a><center>npm简介</center></h2><blockquote><p>npm 是 2009 年开始的一个 javascript 模块管理工具，也是最流行的代码共享平台之一。2013 年 npm 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月 npm官方（<a href="http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there" target="_blank" rel="external">http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there</a> ）发了一份统计，截止 4 月全球估计有 4 百万用户使用 npm，并且这个数字每年会翻一倍。</p>
+<h2 id="npm简介"><a href="#npm简介" class="headerlink" title="npm简介"></a><center>npm简介</center></h2><blockquote><p>npm 是 2009 年开始的一个 javascript<br>模块管理工具，也是最流行的代码共享平台之一。2013 年 npm 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月 npm官方（<a href="http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there" target="_blank" rel="external">http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there</a> ）发了一份统计，截止 4 月全球估计有 4 百万用户使用 npm，并且这个数字每年会翻一倍。</p>
 </blockquote>
 <p>  NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上<br>很多问题，常见的使用场景有以下几种：</p>
 <ul>
@@ -212,12 +211,14 @@
 <p>【2】windows下无法直接删除node_modules，因为node_modules内部嵌套的子目录太多使用rimraf插件可以很好的解决问题<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install rimraf -g</div><div class="line">$ rimraf node_modules</div></pre></td></tr></table></figure></p>
 <p>【3】npm默认将全局包和缓存文件放在C盘。如果想更改路劲可以这样设置：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm config set prefix <span class="string">"d:x\node"</span><span class="comment">//修改nodejs全局包的安装路径</span></div><div class="line">$ npm config set cache <span class="string">"D:\nodejs\npm-cache"</span> <span class="comment">//修改缓存路径</span></div></pre></td></tr></table></figure></p>
 <p><span style="color:#931F1D;background-color:#fcf8e3;">注意：由于改变了module的默认地址，所以上面的用户变量都要跟着改变一下“用户变量”PATH”修改为你重新设置的路径，要不，使用module的时候会导致输入命令出现“xxx不是内部或外部命令，也不是可运行的程序或批处理文件”这个错误。</span></p>
+<p><span style="color:#931F1D;background-color:#f2dede;font-size:18px;">总结，手写代码和排版不易，转载请附上本文链接，谢谢!</span></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;img src=&quot;/2016/07/20/npm学习笔记/npm.png&quot; alt=&quot;npm.png&quot; title=&quot;&quot;&gt;
-&lt;p&gt;&lt;span style=&quot;color:#931F1D;background-color:#f2dede;font-size:18px;&quot;&gt;总结，手写
+      &lt;img src=&quot;/2016/07/20/npm学习笔记/npm.png&quot; alt=&quot;npm学习笔记&quot; title=&quot;npm学习笔记&quot;&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;npm简介&quot;&gt;&lt;a href=&quot;#npm简介&quot; class=&quot;headerlink&quot; title=&quot;npm简介&quot;&gt;
     
     </summary>
     
