@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="前端开发" />
+  <meta name="keywords" content="web开发," />
 
 
 
@@ -96,15 +96,20 @@
 
 
 
-<meta name="description" content="记录web学习路程的点点滴滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="OYsun Blog">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+<meta name="description" content="第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开发Vscode插件Lodash sinpptes的感想">
+<meta property="og:url" content="http://yoursite.com/2016/11/22/vscode-lodash/index.html">
 <meta property="og:site_name" content="OYsun Blog">
-<meta property="og:description" content="记录web学习路程的点点滴滴">
+<meta property="og:description" content="第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。">
+<meta property="og:image" content="http://yoursite.com/2016/11/22/vscode-lodash/title.png">
+<meta property="og:image" content="http://yoursite.com/2016/11/22/vscode-lodash/demo.gif">
+<meta property="og:image" content="http://yoursite.com/2016/11/22/vscode-lodash/install.png">
+<meta property="og:updated_time" content="2016-11-23T07:38:04.801Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OYsun Blog">
-<meta name="twitter:description" content="记录web学习路程的点点滴滴">
+<meta name="twitter:title" content="开发Vscode插件Lodash sinpptes的感想">
+<meta name="twitter:description" content="第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。">
+<meta name="twitter:image" content="http://yoursite.com/2016/11/22/vscode-lodash/title.png">
 
 
 
@@ -125,9 +130,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/page/2/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/22/vscode-lodash/"/>
 
-  <title> 归档 | OYsun Blog </title>
+  <title> 开发Vscode插件Lodash sinpptes的感想 | OYsun Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -158,7 +163,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -279,77 +284,238 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 4 篇日志。 不断学习ing。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                开发Vscode插件Lodash sinpptes的感想
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-22T00:00:00+08:00" content="2016-11-22">
+              2016-11-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/web开发/" itemprop="url" rel="index">
+                    <span itemprop="name">web开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/22/vscode-lodash/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/22/vscode-lodash/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <img src="/2016/11/22/vscode-lodash/title.png" alt="title.png" title="">
+<blockquote><p>第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。</p>
+</blockquote>
+<a id="more"></a>
+<hr>
+<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>Lodash工具库是我开发必不可少的，以前学习jquery体系开发的时候满屏的”$”符号和”_”符号，不过现在学习了vue和react等MVVM框架后就再也不想写jquery了，不过Lodash库还是经常用的。<br>但是Lodash函数一大堆，没有代码提示有点不爽(* ￣︿￣)。虽然说自己对常用的函数很熟悉了，但是还得一个字母一个字幕的敲还是很挫的，如果输入”-“就能提示一大推Lodash函数，按下”Tab”<br>键就可以搞定多好，是吧，所以在vscode插件市场上找关于Lodash的插件，发现有一个，但是用起来不称心，所以干脆就自己写一个吧。</p>
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>先看看效果吧</p>
+<img src="/2016/11/22/vscode-lodash/demo.gif" alt="demo.gif" title="">
+<p>输入”_”就可以出一大堆Lodash函数提示，找到想要的函数按住tab键就可以了，函数的每个参数都可以用tab键来光标切换。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li><p>在vscode插件市场上安装</p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=oysun.Lodash" target="_blank" rel="external">vscode插件地址</a></p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ext install Lodash</div></pre></td></tr></table></figure>
+<ul>
+<li>如果网络不好可以用下载里面的.vsix文件本地安装</li>
+</ul>
+<p>文件在<a href="https://github.com/OYsun/Vscode-Lodash-Snippents" target="_blank" rel="external">github</a>上</p>
+<img src="/2016/11/22/vscode-lodash/install.png" alt="install.png" title="">
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>  用过很多编辑器，像webstorm，sublime 和Atom。webstorm很强大，但是过于笨重，里面内置的很多功能对我来说很鸡肋，还有一点就是巨卡，这点受不了。Atom编辑器无论界面<br>还是功能都很不错，曾经还一度的折腾过，但是她在打开大项目文件的时候还是比较卡，可气的是在卡的时候输个字符都要延迟好久。至于sublime，就是配置有点麻烦，花点时间还是<br>可以折腾出自己满意的样子，不过呢，我还是比较喜欢用vscode。尤其是她的“温馨提示”功能很喜欢，能够提示函数参数的数据类型，可以避免一些错误。<br>  写vscode插件呢首先得要装node，npm这些基础的就不说额。这里说两个写vscode插件必须装的依赖包<br>  第一个是yo generator-code，得安装到全局（类似生产插件项目文件的脚手架）</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g yo generator-code</div></pre></td></tr></table></figure>
+<p>  然后输入</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yo code</div></pre></td></tr></table></figure>
+<p>  生成项目文件，至于项目文件的一些解释和教程，参考下面几篇文章：</p>
+  <blockquote><p><a href="http://www.cnblogs.com/caipeiyu/p/5507252.html" target="_blank" rel="external">http://www.cnblogs.com/caipeiyu/p/5507252.html</a><br><a href="https://code.visualstudio.com/docs/extensionAPI/activation-events" target="_blank" rel="external">https://code.visualstudio.com/docs/extensionAPI/activation-events</a><br><a href="https://code.visualstudio.com/docs/extensionAPI/extension-manifest" target="_blank" rel="external">https://code.visualstudio.com/docs/extensionAPI/extension-manifest</a></p>
+</blockquote>
+<p>  写完插件呢，怎么使用？有个很low的办法，就是拷贝项目到插件目录，但是这不靠谱吧。所以我们需要一个打包工具叫 vsce 同样的可以用npm来安装，打开cmd执行命令</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g vsce</div></pre></td></tr></table></figure>
+<p>  安装完这个工具（⊂((・⊥・))⊃）就是开始入坑了！<br>  要想将自己写的插件发布到vscode市场上，你还得注册微软帐号拿到token才行，拿到token后在自己的插件文件目录下,创建自己的publisher，注意这个publisher要和你插件的publisher一致</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vsce create-publisher (publisher name)</div></pre></td></tr></table></figure>
+<p>  然后就可以publish到vscode插件市场上，当然这最重要的就是输入你得token</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vsce publish -p &lt;token&gt;</div></pre></td></tr></table></figure>
+<p>  如果你不想发布到vscode插件市场上，只想自己用或者给自己团队用，可以package打包成.visx.文件在本地安装</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vsce package</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/zhifubao.png" alt="oysun Alipay"/>
+          <p>支付宝打赏</p>
         </div>
       
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/web开发/" rel="tag">#web开发</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/28/ES6模块学习笔记/" rel="next" title="ES6模块系统学习笔记">
+                <i class="fa fa-chevron-left"></i> ES6模块系统学习笔记
+              </a>
+            
+          </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/23/trees/" rel="prev" title="记学校“学子林成长树信息系统”宣传动画制作历程">
+                记学校“学子林成长树信息系统”宣传动画制作历程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/07/20/npm学习笔记/" itemprop="url">
-              
-                <span itemprop="name">npm学习笔记</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-07-20T00:00:00+08:00"
-              content="2016-07-20" >
-          07-20
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/11/22/vscode-lodash/"
+     data-title="开发Vscode插件Lodash sinpptes的感想"
+     data-content=""
+     data-url="http://yoursite.com/2016/11/22/vscode-lodash/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
-  </section>
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-  </nav>
-
-
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/22/vscode-lodash/"
+           data-title="开发Vscode插件Lodash sinpptes的感想" data-url="http://yoursite.com/2016/11/22/vscode-lodash/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -369,19 +535,28 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            博主概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
                alt="oysun" />
           <p class="site-author-name" itemprop="name">oysun</p>
-          <p class="site-description motion-element" itemprop="description">记录web学习路程的点点滴滴</p>
+          <p class="site-description motion-element" itemprop="description">他日若遂凌云志 敢笑黄巢不丈夫</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -465,6 +640,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#想法"><span class="nav-number">1.</span> <span class="nav-text">想法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现"><span class="nav-number">2.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过程"><span class="nav-number">4.</span> <span class="nav-text">过程</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -561,11 +747,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
