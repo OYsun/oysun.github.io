@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-18T17:52:20.000Z</updated>
+  <updated>2017-01-27T02:42:04.392Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,111 +16,21 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>厚积薄发，就在2017大年初一</title>
-    <link href="http://yoursite.com/2017/01/19/%E5%8E%9A%E7%A7%AF%E8%96%84%E5%8F%91%EF%BC%8C%E5%B0%B1%E5%9C%A82017%E5%A4%A7%E5%B9%B4%E5%88%9D%E4%B8%80/"/>
-    <id>http://yoursite.com/2017/01/19/厚积薄发，就在2017大年初一/</id>
-    <published>2017-01-18T17:43:31.000Z</published>
-    <updated>2017-01-18T17:52:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>我每学习一门技术都会做详细笔记在pdf，然后打印。重新排版md格式比较费事，所以没有及时更新博客。大年初一，我要把我一年以来所有学习前端技术的心得分享出去，勿忘初心！16年我是计划着梦想，17年我要去实现梦想！</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我每学习一门技术都会做详细笔记在pdf，然后打印。重新排版md格式比较费事，所以没有及时更新博客。大年初一，我要把我一年以来所有学习前端技术的心得分享出去，勿忘初心！16年我是计划着梦想，17年我要去实现梦想！&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>励志</title>
-    <link href="http://yoursite.com/2017/01/14/%E5%8A%B1%E5%BF%97/"/>
-    <id>http://yoursite.com/2017/01/14/励志/</id>
-    <published>2017-01-14T01:04:24.000Z</published>
-    <updated>2017-01-14T01:04:24.545Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>奋进</title>
-    <link href="http://yoursite.com/2017/01/13/%E5%A5%8B%E8%BF%9B/"/>
-    <id>http://yoursite.com/2017/01/13/奋进/</id>
-    <published>2017-01-13T10:36:22.000Z</published>
-    <updated>2017-01-13T10:36:22.933Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>心得</title>
-    <link href="http://yoursite.com/2017/01/10/%E5%BF%83%E5%BE%97/"/>
-    <id>http://yoursite.com/2017/01/10/心得/</id>
-    <published>2017-01-10T13:46:30.000Z</published>
-    <updated>2017-01-10T13:46:30.939Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>生活</title>
-    <link href="http://yoursite.com/2017/01/09/%E7%94%9F%E6%B4%BB/"/>
-    <id>http://yoursite.com/2017/01/09/生活/</id>
-    <published>2017-01-09T13:56:25.000Z</published>
-    <updated>2017-01-09T13:56:25.961Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>心情</title>
-    <link href="http://yoursite.com/2017/01/07/%E5%BF%83%E6%83%85/"/>
-    <id>http://yoursite.com/2017/01/07/心情/</id>
-    <published>2017-01-07T10:53:01.000Z</published>
-    <updated>2017-01-07T10:53:01.385Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>记学校“学子林成长树信息系统”宣传动画制作历程</title>
     <link href="http://yoursite.com/2016/11/23/trees/"/>
     <id>http://yoursite.com/2016/11/23/trees/</id>
     <published>2016-11-22T16:00:00.000Z</published>
-    <updated>2016-11-23T15:45:35.458Z</updated>
+    <updated>2017-01-27T02:42:04.392Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2016/11/23/trees/title.png" alt="title.png" title="">
-<blockquote><p>虽然我已经把影视制作当作爱好，专门学习web前端开发，但是还是会去做MG动画，这次动画的制作过程收获很大。因为我认识了茜姐，丹姐和艾辰，还有志同道合的竞一</p>
+    <content type="html"><![CDATA[<blockquote><p>虽然我已经把影视制作当作爱好，专门学习web前端开发，但是还是会去做MG动画，这次动画的制作过程收获很大。因为我认识了茜姐，丹姐和艾辰，还有志同道合的竞一</p>
 </blockquote>
 <a id="more"></a>
 <hr>
+<img src="/2016/11/23/trees/title.png" alt="title.png" title="">
 <embed src="http://player.youku.com/player.php/sid/XMTgzMjIwMzIxNg==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
 
-<p>   这几天一直泡在图书馆学习web开发，打算写完一个vscode的Lodash<br>  sinpptes插件后深入一遍vue，然后用vue和element-UI写一个项目。但是在17号左右艾辰突然在QQ@我问我还做动画不？艾辰是在之前王岩组织一个“啥啥工作室”的时候认识的（不算认识，只是见过面，另外这个工作室由于种种原因最后无疾而终）。我本来想拒绝的，因为我还要好好写代码，但<br>  本人性格是一般都不会拒绝妹子，一般都是被妹子拒绝的。所以我心里不想做，但是口头上却答应了，既然答应了那就做呗，算是温习一下那些MG动画制作的相关知识吧。<br>  来到教学区B2楼，首先认识了竞一，这哥们是学后台.net和java的，也是这个项目的Leader。和他交谈了一会儿感觉相见恨晚啊，自己一直在学前端很多需要后端配合的知识都是让我浅尝辄止，虽然我可以用基础的node搭建一个本地服务器，但是有很多细节还需要更深入的后台的知识，这也是我打算做完用vue和element-UI写的admin页面后好好的学习一下node的原因。<br>    另外，认识了茜姐，丹姐和艾辰。茜姐很平易近人，之前在做书院制动画后和茜姐有段交流，但是没见过面，这次见面，发现茜姐这么漂亮，而且性格很温和，很喜欢夸人，笑起来也很有感染力，我和竞一都认为茜姐是一个很贤惠的女人，找对象就该找她这种的(✿◡‿◡)，让人感到很温馨，不过呢，在这里先祝福茜姐新婚快乐。丹姐呢性格很开朗，做事也很严谨，在<br>  论视频文稿的时候很有想法。艾辰，一个很活泼，很黏人的女孩，她的到来使得我们工作充满了很多乐趣。<br>    这几天由于写插件又得做视频比较累，但是和她们一起做事却很愉快，其实有时候我也很懊恼自己的工作特点，就是一旦认定了做一件事情就会打了鸡血一样的不知疲倦的去做，虽然咋一听这很好啊，但是这对一个人的身体伤害很大。在一开始找我做视频的时候，我也比较敷衍的做了第一个版本，因为我的心思还在写vscode插件上，但是不出所料，第一种视频被pass掉了。然后要求制作另一种形式的视频。而在那天，我<br>  听《老男孩》这首歌突然有点感触，所以那天我对竞一说，你给我一天的时间我会给你满意的视频。也就是说完那句话后我从早上8点起来一直工作到了晚上凌晨3点做好了第二版视频，在这将近20的小时中我重新欣赏了很多国内和国外的MG动画视频，找感觉，找思路，这个视频可以说是我花了比较多额心思，因为我还想找回一下当初那份对影视的激情，当初学习AE的时候那也是这种状态。<br>    今天学校科技节也开幕了，虽然自己对很多事物感情很淡，但是这次看到自己的视频还是有点感触的。</p>
+<p>   这几天一直泡在图书馆学习web开发，打算写完一个vscode的VueHelper插件后深入一遍vue，然后用vue和element-UI写一个项目。但是在17号左右艾辰突然在QQ@我问我还做动画不？艾辰是在之前王岩组织一个“啥啥工作室”的时候认识的（不算认识，只是见过面，另外这个工作室由于种种原因最后无疾而终）。我本来想拒绝的，因为我还要好好写代码，但本人性是一般都不会拒绝妹子，一般都是被妹子拒绝的。所以我心里不想做，但是口头上却答应了，既然答应了那就做呗，算是温习一下那些MG动画制作的相关知识吧。 来到教学区B2楼，首先认识了竞一，这哥们是学后台.net和java的，也是这个项目的Leader。和他交谈了一会儿感觉相见恨晚啊，自己一直在学前端很多需要后端配合的知识都是让我浅尝辄止，虽然我可以基础的node搭建一个本地服务器，但是有很多细节还需要更深入的后台的知识，这也是我打算做完用vue和element-UI写的admin页面后好好的学习一下node的原因。另外，认识了茜姐，丹姐和艾辰。茜姐很平易近人，之前在做书院制动画后和茜姐有段交流，但是没见过面，这次见面，发现茜姐这么漂亮，而且性格很温和，很喜欢夸人，笑起来也很有感染力，我和竞一都认为茜姐是一个很贤惠的女人，找对象就该找她这种的(✿◡‿◡)，让人感到很温馨，不过呢，在这里先祝福茜姐新婚快乐。丹姐呢性格很开朗，做事也很严谨，在论视频文稿的时候很有想法。艾辰，一个很活泼，很黏人的女孩，她的到来使得我们工作充满了很多乐趣。这几天由于写插件又得做视频比较累，但是和她们一起做事却很愉快，其实有时候我也很懊恼自己的工作特点，就是一旦认定了做一件事情就会打了鸡血一样的不知疲倦的去做，虽然咋一听这很好啊，但是这对一个人的身体伤害很大。在一开始找我做视频的时候，我也比较敷衍的做了第一个版本，因为我的心思还在写vscode插件上，但是不出所料，第一种视频被pass掉了。然后要求制作另一种形式的视频。而在那天，我听《老男孩》这首歌突然有点感触，所以那天我对竞一说，你给我一天的时间我会给你满意的视频。也就是说完那句话后我从早上8点起来一直工作到了晚上凌晨3点做好了第二版视频，在这将近20的小时中我重新欣赏了很多国内和国外的MG动画视频，找感觉，找思路，这个视频可以说是我花了比较多额心思，因为我还想找回一下当初那份对影视的激情，当初学习AE的时候那也是这种状态。今天学校科技节也开幕了，虽然自己对很多事物感情很淡，但是这次看到自己的视频还是有点感触的。</p>
   <img src="/2016/11/23/trees/pc01.png" alt="pc01.png" title="">
   <img src="/2016/11/23/trees/pc02.png" alt="pc02.png" title="">
  <blockquote><p>总之，这次视频制作我最大的收获就是认识了茜姐，丹姐，竞一和艾辰。</p>
@@ -129,8 +39,7 @@
     
     <summary type="html">
     
-      &lt;img src=&quot;/2016/11/23/trees/title.png&quot; alt=&quot;title.png&quot; title=&quot;&quot;&gt;
-&lt;blockquote&gt;&lt;p&gt;虽然我已经把影视制作当作爱好，专门学习web前端开发，但是还是会去做MG动画，这次动画的制作过程收获很大。因为我认识了茜姐，丹姐和艾辰，还有志同道合的竞一&lt;/p&gt;
+      &lt;blockquote&gt;&lt;p&gt;虽然我已经把影视制作当作爱好，专门学习web前端开发，但是还是会去做MG动画，这次动画的制作过程收获很大。因为我认识了茜姐，丹姐和艾辰，还有志同道合的竞一&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
@@ -147,14 +56,14 @@
     <link href="http://yoursite.com/2016/11/22/vscode-lodash/"/>
     <id>http://yoursite.com/2016/11/22/vscode-lodash/</id>
     <published>2016-11-21T16:00:00.000Z</published>
-    <updated>2016-11-23T07:38:04.801Z</updated>
+    <updated>2017-01-27T02:36:00.306Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2016/11/22/vscode-lodash/title.png" alt="title.png" title="">
-<blockquote><p>第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。</p>
+    <content type="html"><![CDATA[<blockquote><p>第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。</p>
 </blockquote>
 <a id="more"></a>
 <hr>
-<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>Lodash工具库是我开发必不可少的，以前学习jquery体系开发的时候满屏的”$”符号和”_”符号，不过现在学习了vue和react等MVVM框架后就再也不想写jquery了，不过Lodash库还是经常用的。<br>但是Lodash函数一大堆，没有代码提示有点不爽(* ￣︿￣)。虽然说自己对常用的函数很熟悉了，但是还得一个字母一个字幕的敲还是很挫的，如果输入”-“就能提示一大推Lodash函数，按下”Tab”<br>键就可以搞定多好，是吧，所以在vscode插件市场上找关于Lodash的插件，发现有一个，但是用起来不称心，所以干脆就自己写一个吧。</p>
+<img src="/2016/11/22/vscode-lodash/title.png" alt="title.png" title="">
+<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>Lodash工具库是我开发必不可少的，以前学习jquery体系开发的时候满屏的”$”符号和”_”符号，不过现在学习了vue和react等MVVM框架后就再也不想写jquery了，不过Lodash库还是经常用的。<br>但是Lodash函数一大堆，没有代码提示有点不爽(* ￣︿￣)。虽然说自己对常用的函数很熟悉了，但是还得一个字母一个字幕的敲还是很挫的，如果输入”-“就能提示一大推Lodash函数，按下”Tab”<br>键就可以搞定多好，是吧（这个属于个人习惯）。所以在vscode插件市场上找关于Lodash的插件，发现有一个，但是用起来不称心，所以干脆就自己写一个吧。</p>
 <h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>先看看效果吧</p>
 <img src="/2016/11/22/vscode-lodash/demo.gif" alt="demo.gif" title="">
 <p>输入”_”就可以出一大堆Lodash函数提示，找到想要的函数按住tab键就可以了，函数的每个参数都可以用tab键来光标切换。</p>
@@ -187,31 +96,63 @@
     
     <summary type="html">
     
-      &lt;img src=&quot;/2016/11/22/vscode-lodash/title.png&quot; alt=&quot;title.png&quot; title=&quot;&quot;&gt;
-&lt;blockquote&gt;&lt;p&gt;第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。&lt;/p&gt;
+      &lt;blockquote&gt;&lt;p&gt;第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
-      <category term="web开发" scheme="http://yoursite.com/categories/web%E5%BC%80%E5%8F%91/"/>
+      <category term="编辑器" scheme="http://yoursite.com/categories/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     
     
-      <category term="web开发" scheme="http://yoursite.com/tags/web%E5%BC%80%E5%8F%91/"/>
+      <category term="编辑器" scheme="http://yoursite.com/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>巧用checkBox hack和css实现一个酷炫的效果</title>
+    <link href="http://yoursite.com/2016/05/12/%E5%B7%A7%E7%94%A8checkBox%20hack%E5%92%8Ccss%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%85%B7%E7%82%AB%E7%9A%84%E6%95%88%E6%9E%9C/"/>
+    <id>http://yoursite.com/2016/05/12/巧用checkBox hack和css实现一个酷炫的效果/</id>
+    <published>2016-05-11T16:00:00.000Z</published>
+    <updated>2017-01-27T02:32:14.317Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>纯用css完成的动画，巧妙的运用checkBox hack技术和css3的@keyframes动画实现的效果。</p>
+</blockquote>
+<a id="more"></a>
+<hr>
+<img src="/2016/05/12/巧用checkBox%20hack和css实现一个酷炫的效果/demo1.gif" alt="demo1.gif" title="">
+<p>首先，我是用<code>&lt;input&gt;</code>元素和<code>&lt;label&gt;</code>元素的组合，在<code>&lt;label&gt;</code>元素中放置的是每一个input的具体内容。图标使用的是<a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a>.</p>
+<img src="/2016/05/12/巧用checkBox%20hack和css实现一个酷炫的效果/demo1-j-1.PNG" alt="demo1-j-1.PNG" title="">
+<p>为了使得展示界面更美观，网页设计常用css3渐变背景，附上代码<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*渐变背景样式*/</span></div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">-webkit-perspective</span>: <span class="number">800px</span>;</div><div class="line">  <span class="attribute">perspective</span>: <span class="number">800px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">100vh</span>;</div><div class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">  <span class="attribute">font-family</span>: <span class="string">'Gudea'</span>, sans-serif;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#EA5C54</span>;</div><div class="line">  <span class="comment">/*下面是背景渐变样式，根据不同浏览器hack*/</span></div><div class="line">  <span class="comment">/* FF3.6+  */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-gradient</span>(linear, left top, right bottom, color-stop(0%, #EA5C54), <span class="built_in">color-stop</span>(100%, #bb6dec));</div><div class="line">  <span class="comment">/* Chrome,Safari4+ */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(-45deg, #EA5C54 0%, #bb6dec 100%);</div><div class="line">  <span class="comment">/* Chrome10+,Safari5.1+ */</span></div><div class="line">  <span class="comment">/* Opera 11.10+ */</span></div><div class="line">  <span class="comment">/* IE10+ */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(315deg, #EA5C54 0%, #bb6dec 100%);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(135deg, #EA5C54 0%, #bb6dec 100%);</div><div class="line">  <span class="comment">/* W3C */</span></div><div class="line">  <span class="attribute">filter</span>: progid:DXImageTransform.Microsoft.<span class="built_in">gradient</span>( startColorstr=<span class="string">'#EA5C54 '</span>, endColorstr=<span class="string">'#bb6dec'</span>,GradientType=1 );</div><div class="line">  <span class="comment">/* IE6-9 回退机制 */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>为什么每个块不用<code>&lt;div&gt;</code>而是用<code>input</code>和<code>label</code>标签呢？大家发现没有，这个动画中，当这四个input其中一个被选中时，其左侧有个放大的灰色图标出现动画。如果用div包裹我想得用js实现了，但是用input的checkBox hack的方法可以很巧妙的实现：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.app_inner</span> &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span> &#123;</div><div class="line">  <span class="attribute">display</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">175px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_right</span> &#123;</div><div class="line">  <span class="attribute">top</span>: <span class="number">39px</span>;</div><div class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">0.3s</span> <span class="number">0.2s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="number">0.2s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">80px</span>;</div><div class="line">  <span class="attribute">border-left</span>: <span class="number">12px</span> solid <span class="built_in">rgba</span>(0, 0, 0, 0.12);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_right</span> &#123;</div><div class="line">  <span class="attribute">top</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">0.3s</span> <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_left</span> <span class="selector-class">.tab_left__image</span> &#123;</div><div class="line">  <span class="attribute">-webkit-animation</span>: move_in <span class="number">0.55s</span> <span class="number">0.05s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955) forwards;</div><div class="line">          <span class="attribute">animation</span>: move_in <span class="number">0.55s</span> <span class="number">0.05s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955) forwards;</div><div class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">0.3s</span> <span class="number">0.36s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="number">0.36s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_left</span> <span class="selector-class">.tab_left__image</span> &#123;</div><div class="line">  <span class="attribute">-webkit-animation</span>: move_out <span class="number">0.75s</span> <span class="number">0s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955) forwards;</div><div class="line">          <span class="attribute">animation</span>: move_out <span class="number">0.75s</span> <span class="number">0s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955) forwards;</div><div class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">0.3s</span> <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_left</span> <span class="selector-class">.big</span> &#123;</div><div class="line">  <span class="attribute">left</span>: <span class="number">260px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_left</span> <span class="selector-class">.big</span> &#123;</div><div class="line">  <span class="attribute">left</span>: <span class="number">400px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-tag">h2</span> <span class="selector-tag">i</span> &#123;</div><div class="line">  <span class="attribute">opacity</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-tag">h2</span> <span class="selector-tag">i</span> &#123;</div><div class="line">  <span class="attribute">opacity</span>: .<span class="number">3</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>每一个块都是input，当input被选中时，就会出现这个灰色的大图标，相反，则隐藏大图标，这样就不需要使用js了。至于后面图标平滑的动画则是使用css3的@keyframes。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div></pre></td><td class="code"><pre><div class="line">    @-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> move_out &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">47px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">200px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">keyframes</span> move_out &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">47px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">200px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> move_in &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: -<span class="number">200px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">47px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">keyframes</span> move_in &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: -<span class="number">200px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">47px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> bump &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">  25% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">13px</span>;</div><div class="line">  &#125;</div><div class="line">  50% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">  75% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">13px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">keyframes</span> bump &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">  25% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">13px</span>;</div><div class="line">  &#125;</div><div class="line">  50% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">  75% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">13px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> intro &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(0) <span class="built_in">rotateX</span>(10deg) <span class="built_in">rotateY</span>(10deg) <span class="built_in">rotateZ</span>(40deg);</div><div class="line">            <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(0) <span class="built_in">rotateX</span>(10deg) <span class="built_in">rotateY</span>(10deg) <span class="built_in">rotateZ</span>(40deg);</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(1) <span class="built_in">rotateX</span>(0deg) <span class="built_in">rotateY</span>(0deg) <span class="built_in">rotateZ</span>(0deg);</div><div class="line">            <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(1) <span class="built_in">rotateX</span>(0deg) <span class="built_in">rotateY</span>(0deg) <span class="built_in">rotateZ</span>(0deg);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">keyframes</span> intro &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(0) <span class="built_in">rotateX</span>(10deg) <span class="built_in">rotateY</span>(10deg) <span class="built_in">rotateZ</span>(40deg);</div><div class="line">            <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(0) <span class="built_in">rotateX</span>(10deg) <span class="built_in">rotateY</span>(10deg) <span class="built_in">rotateZ</span>(40deg);</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(1) <span class="built_in">rotateX</span>(0deg) <span class="built_in">rotateY</span>(0deg) <span class="built_in">rotateZ</span>(0deg);</div><div class="line">            <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(1) <span class="built_in">rotateX</span>(0deg) <span class="built_in">rotateY</span>(0deg) <span class="built_in">rotateZ</span>(0deg);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;纯用css完成的动画，巧妙的运用checkBox hack技术和css3的@keyframes动画实现的效果。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
   </entry>
   
   <entry>
     <title>ES6模块系统学习笔记</title>
-    <link href="http://yoursite.com/2016/07/28/ES6%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/07/28/ES6模块学习笔记/</id>
-    <published>2016-07-27T16:00:00.000Z</published>
-    <updated>2016-11-23T01:35:09.621Z</updated>
+    <link href="http://yoursite.com/2016/04/28/ES6%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/28/ES6模块学习笔记/</id>
+    <published>2016-04-27T16:00:00.000Z</published>
+    <updated>2017-01-27T02:48:21.385Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2016/07/28/ES6模块学习笔记/es6.jpg" alt="es6.jpg" title="">
-<blockquote><p>ECMAScript 6 在不久的未来将成为新的标准。对于日新月异的前端技术，我们要拥抱变化，享受ES6带来的美好。</p>
+    <content type="html"><![CDATA[<blockquote><p>ECMAScript 6 在不久的未来将成为新的标准。对于日新月异的前端技术，我们要拥抱变化，享受ES6带来的美好。</p>
 </blockquote>
 <a id="more"></a>
 <hr>
+<img src="/2016/04/28/ES6模块学习笔记/es6.jpg" alt="es6.jpg" title="">
 <p>最近一直在学前端模块化思想。在国内很多企业用sea.js。但是sea.js作者已近发文说sea.js已死。逐渐被淘汰，我觉得应该拥抱变化，所以在模块化学习中没有先学习Require.js,sea.js,CommonJS和UMD。而是先学习ES6的模块系统。在查找资料的过程中，看阮一峰在github开源的一本es6书籍，觉得非常的赞(((o(<em>ﾟ▽ﾟ</em>)o))，所以打算将书中关于es6模块系统那章转载作为自己的学习笔记，方便随时查阅。<br><span style="color:#931F1D;background-color:#f2dede;font-size:18px;"><strong>阮一峰《ECMAScript 6入门》书籍地址：</strong></span><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">http://es6.ruanyifeng.com/</a><br><span style="color:#931F1D;background-color:#f2dede;font-size:18px;"><strong>阮一峰《ECMAScript6入门》github地址：</strong></span><a href="https://github.com/ruanyf/es6tutorial" target="_blank" rel="external">https://github.com/ruanyf/es6tutorial</a></p>
 <hr>
 <p>历史上，JavaScript一直没有模块（module）体系，无法将一个大程序拆分成互相依赖的小文件，再用简单的方法拼装起来。其他语言都有这项功能，比如Ruby的<code>require</code>、Python的<code>import</code>，甚至就连CSS都有<code>@import</code>，但是JavaScript任何这方面的支持都没有，这对开发大型的、复杂的项目形成了巨大障碍。</p>
@@ -449,30 +390,30 @@
     
     <summary type="html">
     
-      &lt;img src=&quot;/2016/07/28/ES6模块学习笔记/es6.jpg&quot; alt=&quot;es6.jpg&quot; title=&quot;&quot;&gt;
-&lt;blockquote&gt;&lt;p&gt;ECMAScript 6 在不久的未来将成为新的标准。对于日新月异的前端技术，我们要拥抱变化，享受ES6带来的美好。&lt;/p&gt;
+      &lt;blockquote&gt;&lt;p&gt;ECMAScript 6 在不久的未来将成为新的标准。对于日新月异的前端技术，我们要拥抱变化，享受ES6带来的美好。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
-      <category term="web开发" scheme="http://yoursite.com/categories/web%E5%BC%80%E5%8F%91/"/>
+      <category term="ES6" scheme="http://yoursite.com/categories/ES6/"/>
     
     
-      <category term="web开发" scheme="http://yoursite.com/tags/web%E5%BC%80%E5%8F%91/"/>
+      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
     
   </entry>
   
   <entry>
     <title>npm学习笔记</title>
-    <link href="http://yoursite.com/2016/07/20/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/07/20/npm学习笔记/</id>
-    <published>2016-07-19T16:00:00.000Z</published>
-    <updated>2016-09-09T16:00:00.000Z</updated>
+    <link href="http://yoursite.com/2016/04/20/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/20/npm学习笔记/</id>
+    <published>2016-04-19T16:00:00.000Z</published>
+    <updated>2017-01-27T02:33:48.663Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2016/07/20/npm学习笔记/npm.png" alt="npm.png" title="">
-<blockquote><p>本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。</p>
+    <content type="html"><![CDATA[<blockquote><p>本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。</p>
 </blockquote>
 <a id="more"></a>
+<hr>
+<img src="/2016/04/20/npm学习笔记/npm.png" alt="npm.png" title="">
 <h2 id="npm简介"><a href="#npm简介" class="headerlink" title="npm简介"></a><center>npm简介</center></h2><p>npm 是 2009 年开始的一个 javascript模块管理工具，也是最流行的代码共享平台之一。2013 年 npm<!--more--> 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月npm官方（<a href="http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there" target="_blank" rel="external">http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there</a> ）发了一份统计，截止 4 月全球估计有 4 百万用户使用 npm，并且这个数字每年会翻一倍。NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上<br>很多问题，常见的使用场景有以下几种：</p>
 <ul>
 <li>允许用户从NPM服务器下载别人编写的第三方包到本地使用。</li>
@@ -662,90 +603,15 @@
     
     <summary type="html">
     
-      &lt;img src=&quot;/2016/07/20/npm学习笔记/npm.png&quot; alt=&quot;npm.png&quot; title=&quot;&quot;&gt;
-&lt;blockquote&gt;&lt;p&gt;本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。&lt;/p&gt;
+      &lt;blockquote&gt;&lt;p&gt;本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
     
-      <category term="web开发" scheme="http://yoursite.com/categories/web%E5%BC%80%E5%8F%91/"/>
+      <category term="前端工程化" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
     
     
-      <category term="web开发" scheme="http://yoursite.com/tags/web%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【UI设计&amp;&amp;代码实现】demo2</title>
-    <link href="http://yoursite.com/2016/05/14/%E3%80%90UI%E8%AE%BE%E8%AE%A1&amp;&amp;%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E3%80%91demo2/"/>
-    <id>http://yoursite.com/2016/05/14/【UI设计&amp;&amp;代码实现】demo2/</id>
-    <published>2016-05-13T16:00:00.000Z</published>
-    <updated>2016-11-23T01:32:58.085Z</updated>
-    
-    <content type="html"><![CDATA[<img src="/2016/05/14/【UI设计&&代码实现】demo2/demo2-a.gif" alt="demo2-a.gif" title="">
-<blockquote><p>创意圆环菜单其实是早在几年就已经很流行了，这种Material Design风格菜单实现起来其实挺简单的，只需要很少的css代码。</p>
-</blockquote>
-<a id="more"></a>
-<hr>
-<img src="/2016/05/14/【UI设计&&代码实现】demo2/demo2-b.gif" alt="demo2-b.gif" title=""> 
-<img src="/2016/05/14/【UI设计&&代码实现】demo2/demo2-c.gif" alt="demo2-c.gif" title="">
-<p>当然，这种圆环菜单一般都是用于手机端的。所以，对背景做了响应式。用手机观看最佳，在pc端。可以用浏览器的开发者工具模拟手机端来查看效果</p>
-<img src="/2016/05/14/【UI设计&&代码实现】demo2/demo2-g.gif" alt="demo2-g.gif" title="">
-<p>首先呢，这里共有7中效果，每种效果都用<code>&lt;section&gt;</code>标签包裹</p>
- <img src="/2016/05/14/【UI设计&&代码实现】demo2/a.png" alt="a.png" title="">
-<p> 我们就举例第一种来分析吧，首先，你用css写五个圆形（这就不用说了吧），其中第一个圆环是开关按钮，z-index要写高一点，后面几个圆形呢，让其被包裹在一个容器里（<code>btn-list</code>类）</p>
-<img src="/2016/05/14/【UI设计&&代码实现】demo2/b.png" alt="b.png" title="">
-<p> 然后你设置<code>overflow: hidden</code>和<code>opacity: 0</code>。这样里面的圆环菜单就被隐藏了，能看见的就只有圆环开关。当你点击了圆环开关，圆环开关往左边移动，而里面的圆环菜单透明体逐渐为1，这就形成了css动画效果<br> <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"> <span class="selector-class">.model-0</span> <span class="selector-class">.float-btn-group</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">65px</span>;</div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">15px</span>;</div><div class="line">  <span class="attribute">min-height</span>: <span class="number">65px</span>;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.model-0</span> <span class="selector-class">.float-btn-group</span> <span class="selector-class">.btn-list</span> &#123;</div><div class="line">  <span class="attribute">opacity</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">width</span>: <span class="number">215px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.model-0</span> <span class="selector-class">.float-btn-group</span><span class="selector-class">.open</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">285px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.model-0</span> <span class="selector-class">.float-btn-group</span><span class="selector-class">.open</span> <span class="selector-class">.btn-list</span> &#123;</div><div class="line">  <span class="attribute">opacity</span>: <span class="number">1</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p> 第二种呢，首先定位写好圆形开关和各个菜单的位置，然后就是使其透明度为0，添加<code>border-radius: 50%</code>创建圆形背景，当你点击开关，用transform的scale属性慢慢放大圆形菜单，形成动画效果。后面几种原理都是一样，至于圆形开关的原理，其实就给圆形开关增加一个类<code>open</code>,这样这个开关就有两种类，一种是<code>.float-btn-group</code>，一种是<code>.float-btn-group.open</code>。当没点击的时候，圆心开关是<code>.float-btn-group</code>的类，在其类选择下的圆形菜单列表透明度都是0，隐藏了。当点击开关的时候。则是<code>.float-btn-group.open</code>类，在其类下的圆形菜单透明度都是1.并且用css transition来做动画效果。所以，这些圆形菜单只需一行js代码就行了<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> <span class="comment">//       meun切换开关</span></div><div class="line">$(<span class="string">'.btn-triger'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    $(<span class="keyword">this</span>).closest(<span class="string">'.float-btn-group'</span>).toggleClass(<span class="string">'open'</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;img src=&quot;/2016/05/14/【UI设计&amp;&amp;代码实现】demo2/demo2-a.gif&quot; alt=&quot;demo2-a.gif&quot; title=&quot;&quot;&gt;
-&lt;blockquote&gt;&lt;p&gt;创意圆环菜单其实是早在几年就已经很流行了，这种Material Design风格菜单实现起来其实挺简单的，只需要很少的css代码。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="web开发" scheme="http://yoursite.com/categories/web%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="web开发" scheme="http://yoursite.com/tags/web%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【UI设计&amp;&amp;代码实现】demo1</title>
-    <link href="http://yoursite.com/2016/05/12/%E3%80%90UI%E8%AE%BE%E8%AE%A1&amp;&amp;%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E3%80%91demo1/"/>
-    <id>http://yoursite.com/2016/05/12/【UI设计&amp;&amp;代码实现】demo1/</id>
-    <published>2016-05-11T16:00:00.000Z</published>
-    <updated>2016-11-23T01:32:16.127Z</updated>
-    
-    <content type="html"><![CDATA[<img src="/2016/05/12/【UI设计&&代码实现】demo1/demo1.gif" alt="demo1.gif" title="">
-<blockquote><p>纯用css3完成的动画，学习借鉴国外danielcardoso大神的思路，巧妙的运用checkBox hack技术和css3的@keyframes动画实现的效果。</p>
-</blockquote>
-<a id="more"></a>
-<hr>
-<p>首先，我是用<code>&lt;input&gt;</code>元素和<code>&lt;label&gt;</code>元素的组合，在<code>&lt;label&gt;</code>元素中放置的是每一个input的具体内容。图标使用的是<a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a>.</p>
-<img src="/2016/05/12/【UI设计&&代码实现】demo1/demo1-j-1.PNG" alt="demo1-j-1.PNG" title="">
-<p>为了使得展示界面更美观，我用了自己收集的网页设计常用css3渐变背景，附上代码<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*渐变背景样式*/</span></div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">-webkit-perspective</span>: <span class="number">800px</span>;</div><div class="line">  <span class="attribute">perspective</span>: <span class="number">800px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">100vh</span>;</div><div class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">  <span class="attribute">font-family</span>: <span class="string">'Gudea'</span>, sans-serif;</div><div class="line">  <span class="attribute">background</span>: <span class="number">#EA5C54</span>;</div><div class="line">  <span class="comment">/*下面是背景渐变样式，根据不同浏览器hack*/</span></div><div class="line">  <span class="comment">/* FF3.6+  */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-gradient</span>(linear, left top, right bottom, color-stop(0%, #EA5C54), <span class="built_in">color-stop</span>(100%, #bb6dec));</div><div class="line">  <span class="comment">/* Chrome,Safari4+ */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(-45deg, #EA5C54 0%, #bb6dec 100%);</div><div class="line">  <span class="comment">/* Chrome10+,Safari5.1+ */</span></div><div class="line">  <span class="comment">/* Opera 11.10+ */</span></div><div class="line">  <span class="comment">/* IE10+ */</span></div><div class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(315deg, #EA5C54 0%, #bb6dec 100%);</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(135deg, #EA5C54 0%, #bb6dec 100%);</div><div class="line">  <span class="comment">/* W3C */</span></div><div class="line">  <span class="attribute">filter</span>: progid:DXImageTransform.Microsoft.<span class="built_in">gradient</span>( startColorstr=<span class="string">'#EA5C54 '</span>, endColorstr=<span class="string">'#bb6dec'</span>,GradientType=1 );</div><div class="line">  <span class="comment">/* IE6-9 回退机制 */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>为什么每个块不用<code>&lt;div&gt;</code>而是用<code>input</code>和<code>label</code>标签呢？大家发现没有，这个动画中，当这四个input其中一个被选中时，其左侧有个放大的灰色图标出现动画。如果用div包裹我想得用js实现了，但是用input的checkBox hack的方法可以很巧妙的实现：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.app_inner</span> &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span> &#123;</div><div class="line">  <span class="attribute">display</span>: none;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">175px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_right</span> &#123;</div><div class="line">  <span class="attribute">top</span>: <span class="number">39px</span>;</div><div class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">0.3s</span> <span class="number">0.2s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="number">0.2s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">80px</span>;</div><div class="line">  <span class="attribute">border-left</span>: <span class="number">12px</span> solid <span class="built_in">rgba</span>(0, 0, 0, 0.12);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_right</span> &#123;</div><div class="line">  <span class="attribute">top</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">0.3s</span> <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_left</span> <span class="selector-class">.tab_left__image</span> &#123;</div><div class="line">  <span class="attribute">-webkit-animation</span>: move_in <span class="number">0.55s</span> <span class="number">0.05s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955) forwards;</div><div class="line">          <span class="attribute">animation</span>: move_in <span class="number">0.55s</span> <span class="number">0.05s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955) forwards;</div><div class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">0.3s</span> <span class="number">0.36s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="number">0.36s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_left</span> <span class="selector-class">.tab_left__image</span> &#123;</div><div class="line">  <span class="attribute">-webkit-animation</span>: move_out <span class="number">0.75s</span> <span class="number">0s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955) forwards;</div><div class="line">          <span class="attribute">animation</span>: move_out <span class="number">0.75s</span> <span class="number">0s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955) forwards;</div><div class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">0.3s</span> <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span> <span class="number">0.3s</span> <span class="built_in">cubic-bezier</span>(0.455, 0.03, 0.515, 0.955);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_left</span> <span class="selector-class">.big</span> &#123;</div><div class="line">  <span class="attribute">left</span>: <span class="number">260px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-class">.tab_left</span> <span class="selector-class">.big</span> &#123;</div><div class="line">  <span class="attribute">left</span>: <span class="number">400px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-tag">h2</span> <span class="selector-tag">i</span> &#123;</div><div class="line">  <span class="attribute">opacity</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.app_inner</span> <span class="selector-tag">input</span><span class="selector-attr">[type="radio"]</span><span class="selector-pseudo">:not(checked)</span> + <span class="selector-tag">label</span> <span class="selector-class">.app_inner__tab</span> <span class="selector-tag">h2</span> <span class="selector-tag">i</span> &#123;</div><div class="line">  <span class="attribute">opacity</span>: .<span class="number">3</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>每一个块都是input，当input被选中时，就会出现这个灰色的大图标，相反，则隐藏大图标，这样就不需要使用js了。至于后面图标平滑的动画则是使用css3的@keyframes。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div></pre></td><td class="code"><pre><div class="line">    @-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> move_out &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">47px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">200px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@<span class="keyword">keyframes</span> move_out &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">47px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">200px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> move_in &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: -<span class="number">200px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">47px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">keyframes</span> move_in &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: -<span class="number">200px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">47px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> bump &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">  25% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">13px</span>;</div><div class="line">  &#125;</div><div class="line">  50% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">  75% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">13px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">keyframes</span> bump &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">  25% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">13px</span>;</div><div class="line">  &#125;</div><div class="line">  50% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">  75% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">13px</span>;</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">top</span>: <span class="number">16px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> intro &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(0) <span class="built_in">rotateX</span>(10deg) <span class="built_in">rotateY</span>(10deg) <span class="built_in">rotateZ</span>(40deg);</div><div class="line">            <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(0) <span class="built_in">rotateX</span>(10deg) <span class="built_in">rotateY</span>(10deg) <span class="built_in">rotateZ</span>(40deg);</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(1) <span class="built_in">rotateX</span>(0deg) <span class="built_in">rotateY</span>(0deg) <span class="built_in">rotateZ</span>(0deg);</div><div class="line">            <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(1) <span class="built_in">rotateX</span>(0deg) <span class="built_in">rotateY</span>(0deg) <span class="built_in">rotateZ</span>(0deg);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">keyframes</span> intro &#123;</div><div class="line">  0% &#123;</div><div class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(0) <span class="built_in">rotateX</span>(10deg) <span class="built_in">rotateY</span>(10deg) <span class="built_in">rotateZ</span>(40deg);</div><div class="line">            <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(0) <span class="built_in">rotateX</span>(10deg) <span class="built_in">rotateY</span>(10deg) <span class="built_in">rotateZ</span>(40deg);</div><div class="line">  &#125;</div><div class="line">  100% &#123;</div><div class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(1) <span class="built_in">rotateX</span>(0deg) <span class="built_in">rotateY</span>(0deg) <span class="built_in">rotateZ</span>(0deg);</div><div class="line">            <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%) <span class="built_in">scale</span>(1) <span class="built_in">rotateX</span>(0deg) <span class="built_in">rotateY</span>(0deg) <span class="built_in">rotateZ</span>(0deg);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>至于@keyframes怎么写，其实有很多方法，可以使用css的开源动画库。我们经常用AE或者sketch做一些原型动画，可以使用脚本来导出xml格式的源文件，里面的动画关键帧参数可以使用来写css的@keyframes。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;img src=&quot;/2016/05/12/【UI设计&amp;&amp;代码实现】demo1/demo1.gif&quot; alt=&quot;demo1.gif&quot; title=&quot;&quot;&gt;
-&lt;blockquote&gt;&lt;p&gt;纯用css3完成的动画，学习借鉴国外danielcardoso大神的思路，巧妙的运用checkBox hack技术和css3的@keyframes动画实现的效果。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="web开发" scheme="http://yoursite.com/categories/web%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="web开发" scheme="http://yoursite.com/tags/web%E5%BC%80%E5%8F%91/"/>
+      <category term="前端工程化" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
     
   </entry>
   
