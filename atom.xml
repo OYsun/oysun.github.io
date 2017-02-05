@@ -56,7 +56,7 @@
     <link href="http://yoursite.com/2016/11/22/vscode-lodash/"/>
     <id>http://yoursite.com/2016/11/22/vscode-lodash/</id>
     <published>2016-11-21T16:00:00.000Z</published>
-    <updated>2017-01-27T02:36:00.306Z</updated>
+    <updated>2017-01-27T03:34:43.351Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。</p>
 </blockquote>
@@ -101,10 +101,10 @@
     
     </summary>
     
-      <category term="编辑器" scheme="http://yoursite.com/categories/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+      <category term="web前端开发" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="编辑器" scheme="http://yoursite.com/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+      <category term="web前端开发" scheme="http://yoursite.com/tags/web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -113,7 +113,7 @@
     <link href="http://yoursite.com/2016/05/12/%E5%B7%A7%E7%94%A8checkBox%20hack%E5%92%8Ccss%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%85%B7%E7%82%AB%E7%9A%84%E6%95%88%E6%9E%9C/"/>
     <id>http://yoursite.com/2016/05/12/巧用checkBox hack和css实现一个酷炫的效果/</id>
     <published>2016-05-11T16:00:00.000Z</published>
-    <updated>2017-01-27T02:32:14.317Z</updated>
+    <updated>2017-01-27T03:34:59.301Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>纯用css完成的动画，巧妙的运用checkBox hack技术和css3的@keyframes动画实现的效果。</p>
 </blockquote>
@@ -134,10 +134,10 @@
     
     </summary>
     
-      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+      <category term="web前端开发" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+      <category term="web前端开发" scheme="http://yoursite.com/tags/web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -146,7 +146,7 @@
     <link href="http://yoursite.com/2016/04/28/ES6%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2016/04/28/ES6模块学习笔记/</id>
     <published>2016-04-27T16:00:00.000Z</published>
-    <updated>2017-01-27T02:48:21.385Z</updated>
+    <updated>2017-01-27T03:34:07.754Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>ECMAScript 6 在不久的未来将成为新的标准。对于日新月异的前端技术，我们要拥抱变化，享受ES6带来的美好。</p>
 </blockquote>
@@ -395,10 +395,10 @@
     
     </summary>
     
-      <category term="ES6" scheme="http://yoursite.com/categories/ES6/"/>
+      <category term="web前端开发" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
+      <category term="web前端开发" scheme="http://yoursite.com/tags/web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -407,7 +407,7 @@
     <link href="http://yoursite.com/2016/04/20/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2016/04/20/npm学习笔记/</id>
     <published>2016-04-19T16:00:00.000Z</published>
-    <updated>2017-01-27T02:33:48.663Z</updated>
+    <updated>2017-01-27T03:34:24.823Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。</p>
 </blockquote>
@@ -608,10 +608,10 @@
     
     </summary>
     
-      <category term="前端工程化" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+      <category term="web前端开发" scheme="http://yoursite.com/categories/web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="前端工程化" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+      <category term="web前端开发" scheme="http://yoursite.com/tags/web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
