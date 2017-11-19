@@ -1,28 +1,24 @@
 ---
 title: 开发Vscode插件Lodash sinpptes的感想
 date: 2016-11-22
-tags:  web前端开发
-categories:  web前端开发
+tags:  web开发
+categories: web开发
 ---
 
 {% blockquote %}
 第一次开发vscode插件，记录一下一些坑，方便以后工作需要继续开发vscode插件做个可以查阅的笔记。
 {% endblockquote %}
+
+{% asset_img title.png %}
 <!--more-->
 
 ------------------------------------------------------------------------------------------
 
-{% asset_img title.png %}
 
-## 想法
 
-Lodash工具库是我开发必不可少的，以前学习jquery体系开发的时候满屏的"$"符号和"_"符号，不过现在学习了vue和react等MVVM框架后就再也不想写jquery了，不过Lodash库还是经常用的。
-但是Lodash函数一大堆，没有代码提示有点不爽(* ￣︿￣)。虽然说自己对常用的函数很熟悉了，但是还得一个字母一个字幕的敲还是很挫的，如果输入"-"就能提示一大推Lodash函数，按下"Tab"
-键就可以搞定多好，是吧（这个属于个人习惯）。所以在vscode插件市场上找关于Lodash的插件，发现有一个，但是用起来不称心，所以干脆就自己写一个吧。
 
 ## 实现
 
-先看看效果吧
 
 {% asset_img demo.gif %}
 

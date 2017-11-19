@@ -1,8 +1,8 @@
 ---
 title: ES6模块系统学习笔记
 date: 2016-04-28
-tags: web前端开发
-categories:  web前端开发
+tags: web开发
+categories:  web开发
 ---
 
 {% blockquote %}

@@ -1,18 +1,20 @@
 ---
-title: npm学习笔记
+title: npm学习速记
 date: 2016-04-20
-tags: web前端开发 
-categories:  web前端开发
+tags: web开发
+categories: web开发
 ---
 
 {% blockquote %}
 本着夯实基础是关键的理念，所以之前一直潜心专研html5，css3和js。对于日新月异的前端工程化构建工具一直没去关注，现阶段，在我计划的学习路径中开始了解并且学习前端工程化思路和实现。npm，gulp，git，webpack和vue将是我后面学习的方向。
 {% endblockquote %}
+
+{% asset_img npm.png %}
 <!--more-->
 
 ---------------------------------------------------------------------------------------------------
 
-{% asset_img npm.png %}
+
 
 ## <center>npm简介</center> 
 npm 是 2009 年开始的一个 javascript模块管理工具，也是最流行的代码共享平台之一。2013 年 npm<!--more--> 的模块总数是 4 万，2014 年就升到 8 万以上，超过所有其他同类平台。今年 4 月npm官方（http://blog.npmjs.org/post/143451680695/how-many-npm-users-are-there ）发了一份统计，截止 4 月全球估计有 4 百万用户使用 npm，并且这个数字每年会翻一倍。NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上
