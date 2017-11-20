@@ -8,7 +8,6 @@ categories:  影视技术
 {% blockquote %}
 虽然我已经把影视制作当作爱好，专门学习web前端开发，但是还是会去做MG动画，这次动画的制作过程收获很大。因为我认识了茜姐，丹姐和艾辰，还有志同道合的竞一
 {% endblockquote %}
-
 {% asset_img title.png %}
 
 <!--more-->

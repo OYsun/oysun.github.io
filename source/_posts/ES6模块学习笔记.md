@@ -3,18 +3,18 @@ title: ES6模块系统学习笔记
 date: 2016-04-28
 tags: web开发
 categories:  web开发
+
 ---
 
 {% blockquote %}
 ECMAScript 6 在不久的未来将成为新的标准。对于日新月异的前端技术，我们要拥抱变化，享受ES6带来的美好。
 {% endblockquote %}
 
+{% asset_img es6.jpg %}
 <!--more-->
 
 -------------------------------------------------------
 
-
-{% asset_img es6.jpg %}
 
 最近一直在学前端模块化思想。在国内很多企业用sea.js。但是sea.js作者已近发文说sea.js已死。逐渐被淘汰，我觉得应该拥抱变化，所以在模块化学习中没有先学习Require.js,sea.js,CommonJS和UMD。而是先学习ES6的模块系统。在查找资料的过程中，看阮一峰在github开源的一本es6书籍，觉得非常的赞(((o(*ﾟ▽ﾟ*)o))，所以打算将书中关于es6模块系统那章转载作为自己的学习笔记，方便随时查阅。
 <span style="color:#931F1D;background-color:#f2dede;font-size:18px;">**阮一峰《ECMAScript 6入门》书籍地址：**</span>http://es6.ruanyifeng.com/
