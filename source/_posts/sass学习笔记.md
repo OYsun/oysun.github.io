@@ -1,12 +1,12 @@
 ---
 title: SASS学习笔记
-date: 2017-1-20
-tags: web前端开发 
-categories:  web前端开发
+date: 2016-09-20
+tags: web开发 
+categories:  web开发
 ---
 
 {% blockquote %}
- SASS和Less一样都是css预处理器。之前一直是学习Less,现在学习SASS，发现SASS在很多地方比Less强大很多。因为有Less的基础，所以学习SASS特别快，先将SASS的学习记录下来当作笔记，以便查阅
+SASS和Less一样都是css预处理器。之前一直是学习Less,现在学习SASS，发现SASS在很多地方比Less强大很多。因为有Less的基础，所以学习SASS特别快，先将SASS的学习记录下来当作笔记，以便查阅
 {% endblockquote %}
 
 <!--more-->

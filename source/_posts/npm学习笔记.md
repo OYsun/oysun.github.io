@@ -37,56 +37,65 @@ $ npm install npm@latest -g
 ### 2.1简单查询
 
 >查看 npm 命令列表
+
 ```javascript
 $ npm help
 ```
 >查看各个命令的简单用法
+
 ```javascript
 $ npm -l 
 ```
 >查看当前npm 的版本
+
 ```javascript
 $ npm -v
 ```
 >查看 npm 的配置
+
 ```javascript
 $ npm config list -l
 ```
 >以树型结构列出当前项目安装的所有模块，以及它们依赖的模块
+
 ```javascript
 $ npm ls
 ```
 >列出所有全局安装的模块
+
 ```javascript
 $ npm ls -g
 ```
 >全局和本地的依赖包的安装路径
+
 ```javascript
 $ npm root - g 
 $ npm root
 ```
 >查看全局或者本地的依赖包
+
 ```javascript
 $ npm list -g 
 $ npm list
 ```
+
 >查看依赖包的package.json 的信息，也可以单独查找某一个配置项
+
 ```javascript
 $ npm view <package name> 
 $ npm view <package name> dependencies  //查看gulp包的依赖关系
 $ npm view <package name> repository.url  //查看gulp包的源文件地址
 ```
 >搜索远程资源库中的依赖包，当在需要发布一个依赖包的时候，可以用这个命令。查找是否已有依赖包
+
 ```javascript
 $ npm search <package name> 
 ```
 >查看某个包的信息
+
 ```javascript
 $ npm info <package name>
 ```
-
-
-
 
 
 ### 2.2  npm init命令

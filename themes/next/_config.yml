@@ -123,7 +123,7 @@ social:
   # E-Mail: mailto:web-oysun@qq.com || envelope
   站酷: http://www.zcool.com.cn/u/13297081
   微博: https://weibo.com/u/3802300078 || weibo
-  知乎: https://www.zhihu.com/people/OYSun || zhihu
+  知乎: https://www.zhihu.com/people/OYSun 
 
 social_icons:
   enable: true
@@ -137,7 +137,8 @@ links_title: 友情链接
 links_layout: inline
 links:
   一呼医生，一分钟挂上专家号: http://www.1hu.me/
-  大白就医网-有医说医选好医: http://dabai365.com/
+  大白就医网——有医说医选好医: http://dabai365.com/
+  大笑话——中国最大、最有趣的高校社区: http://www.daxiaohua.net/
   携程UED: http://ued.ctrip.com/blog/
   腾讯ISUX: https://isux.tencent.com/
   淘宝FED: http://taobaofed.org/
