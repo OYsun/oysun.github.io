@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/favicon.ico?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="最近发现市场上有个叫做“企鹅医生”的产品，顿时大惊，也属于企鹅系。纵观腾讯在互联网网医疗领域的布局，并没有像阿里一样成立阿里健康这样的隶属产品，而是选择通过投资布局互联网医疗行业。所以抱着学习的态度，浅薄的分析一下三家由腾讯投资的互联网医疗公司——丁香医生，好大夫在线和微医">
+<meta name="keywords" content="产品">
+<meta property="og:type" content="article">
+<meta property="og:title" content="腾讯布局移动医疗浅析">
+<meta property="og:url" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/index.html">
+<meta property="og:site_name" content="欧阳森个人博客">
+<meta property="og:description" content="最近发现市场上有个叫做“企鹅医生”的产品，顿时大惊，也属于企鹅系。纵观腾讯在互联网网医疗领域的布局，并没有像阿里一样成立阿里健康这样的隶属产品，而是选择通过投资布局互联网医疗行业。所以抱着学习的态度，浅薄的分析一下三家由腾讯投资的互联网医疗公司——丁香医生，好大夫在线和微医">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/000.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/001.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/002.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/003.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/004.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/005.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/006.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/007.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/008.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/009.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/010.jpg">
+<meta property="og:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/011.jpg">
+<meta property="og:updated_time" content="2018-01-13T11:48:56.275Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="腾讯布局移动医疗浅析">
+<meta name="twitter:description" content="最近发现市场上有个叫做“企鹅医生”的产品，顿时大惊，也属于企鹅系。纵观腾讯在互联网网医疗领域的布局，并没有像阿里一样成立阿里健康这样的隶属产品，而是选择通过投资布局互联网医疗行业。所以抱着学习的态度，浅薄的分析一下三家由腾讯投资的互联网医疗公司——丁香医生，好大夫在线和微医">
+<meta name="twitter:image" content="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/000.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/"/>
+
+
+
+
+
+  <title>腾讯布局移动医疗浅析 | 欧阳森个人博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">欧阳森个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">渴望加入稀土掘金团队</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://web-oysun.cn/2017/11/17/腾讯布局移动医疗浅析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="欧阳森">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欧阳森个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">腾讯布局移动医疗浅析</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-17T15:20:17+08:00">
+                2017-11-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/产品/" itemprop="url" rel="index">
+                    <span itemprop="name">产品</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/11/17/腾讯布局移动医疗浅析/" class="leancloud_visitors" data-flag-title="腾讯布局移动医疗浅析">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote><p>最近发现市场上有个叫做“企鹅医生”的产品，顿时大惊，也属于企鹅系。纵观腾讯在互联网网医疗领域的布局，并没有像阿里一样成立阿里健康这样的隶属产品，而是选择通过投资布局互联网医疗行业。所以抱着学习的态度，浅薄的分析一下三家由腾讯投资的互联网医疗公司——丁香医生，好大夫在线和微医</p>
+</blockquote>
+<a id="more"></a>
+<hr>
+<h2 id="总体情况和用户分析"><a href="#总体情况和用户分析" class="headerlink" title="总体情况和用户分析"></a>总体情况和用户分析</h2><ul>
+<li><p>应用排名</p>
+<img src="/2017/11/17/腾讯布局移动医疗浅析/000.jpg">
+<p>从这里我们可以看出，丁香医生的排名三者垫底，好大夫和微医则处于纠缠状态</p>
+</li>
+<li><p>用户活跃</p>
+<img src="/2017/11/17/腾讯布局移动医疗浅析/001.jpg">
+<p>微医&gt;好大夫&gt;丁香医生，但是微医活跃度有所下降</p>
+</li>
+<li><p>人群分布</p>
+<img src="/2017/11/17/腾讯布局移动医疗浅析/002.jpg">
+<p>&emsp; 丁香医生遍布全国，用户比较平均<br>&emsp; 好大夫和微医的用户区域比较重合，但微医拥有三者中拥有最多的深色区域，可能与它接入了更多的线下互联网医院、医联体有关</p>
+</li>
+</ul>
+<h2 id="使用场景辨析"><a href="#使用场景辨析" class="headerlink" title="使用场景辨析"></a>使用场景辨析</h2><blockquote>
+<p>丁香医生</p>
+</blockquote>
+<h3 id="使用场景："><a href="#使用场景：" class="headerlink" title="使用场景："></a>使用场景：</h3><ul>
+<li>身体有恙，使用app进行问诊，得到医生建议之后前往医院进行诊治</li>
+<li>小病时查询用药方法和禁忌</li>
+<li>查找附近药房医院（极少）</li>
+<li>通过检索疾病名，查看可能情况的病例及医生的回答</li>
+</ul>
+<h3 id="解决痛点："><a href="#解决痛点：" class="headerlink" title="解决痛点："></a>解决痛点：</h3><ul>
+<li>家庭用药快查</li>
+<li>轻问诊，方便用户解决小病慢病</li>
+<li>阅读靠谱的医疗科普文章的需求</li>
+</ul>
+<blockquote>
+<p>微医</p>
+</blockquote>
+<h3 id="使用场景：-1"><a href="#使用场景：-1" class="headerlink" title="使用场景："></a>使用场景：</h3><ul>
+<li>不想排队，直接在线挂号，节省时间</li>
+<li>生病时与医生交流，依据确诊情况开出的处方</li>
+<li>在线购买药品器械</li>
+<li>在医言堂与病友、医生交流，并按照疾病获取最新资讯</li>
+<li>目前微医还在做医疗百科等项目，希望占据权威医疗知识高地</li>
+</ul>
+<h3 id="解决痛点：-1"><a href="#解决痛点：-1" class="headerlink" title="解决痛点："></a>解决痛点：</h3><ul>
+<li>挂号难</li>
+<li>小病去医院、药店浪费时间</li>
+<li>专家问诊</li>
+</ul>
+<blockquote>
+<p>好大夫</p>
+</blockquote>
+<h3 id="使用场景：-2"><a href="#使用场景：-2" class="headerlink" title="使用场景："></a>使用场景：</h3><ul>
+<li>生病了想要在线看个病，顺便开个处方/检查，之后通过其他途径购药/检查</li>
+<li>急病时想要立刻与医生通话</li>
+<li>有慢病，和家庭医生随时联系</li>
+</ul>
+<h3 id="解决痛点：-2"><a href="#解决痛点：-2" class="headerlink" title="解决痛点："></a>解决痛点：</h3><ul>
+<li>紧急联系医生需求</li>
+<li>可以在线获得处方药许可</li>
+<li>慢病管理</li>
+</ul>
+<h2 id="功能和页面"><a href="#功能和页面" class="headerlink" title="功能和页面"></a>功能和页面</h2><h3 id="功能详图"><a href="#功能详图" class="headerlink" title="功能详图"></a>功能详图</h3><blockquote>
+<p>丁香医生</p>
+</blockquote>
+<img src="/2017/11/17/腾讯布局移动医疗浅析/003.jpg">
+<blockquote>
+<p>微医</p>
+</blockquote>
+<img src="/2017/11/17/腾讯布局移动医疗浅析/004.jpg">
+<blockquote>
+<p>好大夫在线</p>
+</blockquote>
+<img src="/2017/11/17/腾讯布局移动医疗浅析/005.jpg">
+<p>核心功能对比</p>
+<img src="/2017/11/17/腾讯布局移动医疗浅析/006.jpg">
+<p>由此可以看出：</p>
+<ul>
+<li>丁香医生偏工具属性</li>
+<li>微医是综合医疗平台</li>
+<li>好大夫更像是网上医院</li>
+</ul>
+<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><blockquote>
+<p>丁香园<br><img src="/2017/11/17/腾讯布局移动医疗浅析/007.jpg"></p>
+<p>微医<br><img src="/2017/11/17/腾讯布局移动医疗浅析/008.jpg"><br><img src="/2017/11/17/腾讯布局移动医疗浅析/009.jpg"></p>
+<p>好大夫<br><img src="/2017/11/17/腾讯布局移动医疗浅析/010.jpg"></p>
+</blockquote>
+<p>布局总结<br><img src="/2017/11/17/腾讯布局移动医疗浅析/011.jpg"></p>
+<h2 id="优劣势"><a href="#优劣势" class="headerlink" title="优劣势"></a>优劣势</h2><blockquote>
+<p>丁香医生</p>
+</blockquote>
+<h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><ul>
+<li>全平台营销（知乎、微信公众号）带来巨大流量</li>
+<li>依托丁香园平台，拥有庞大的医生资源</li>
+<li>工具属性让用户能够很方便地使用特定功能</li>
+<li>类似分答的功能可以查看已有回答，容易找到与自身相同的病例和解决方法</li>
+<li>简洁美观的UI让使用变得非常简单，用户体验较好</li>
+</ul>
+<h3 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h3><ul>
+<li>流量没有转化为下载和活跃</li>
+<li>功能太过简单的情况下，功能各不相关，很难让用户在特定场景下想起</li>
+<li>核心功能和市场上几乎所有产品重合，没有特色</li>
+<li>问诊非实时聊天，用户体验不是很好，经常需要长时间等待</li>
+<li>工具箱为鸡肋功能，使用地图应用用户体验更好</li>
+<li>没有处方权，用户使用完毕依然需要前往医院</li>
+<li>数据零散，用户分析困难</li>
+</ul>
+<blockquote>
+<p>微医</p>
+</blockquote>
+<h3 id="优势-1"><a href="#优势-1" class="headerlink" title="优势"></a>优势</h3><ul>
+<li>曝光主要来自各大主流媒体（央视报道、各大报纸），且被习大大提及，产品最为落地</li>
+<li>咨询—问诊—商城形成闭环，可以提供全流程服务</li>
+<li>拳头功能挂号引流强大，用户粘性很强，复用率有保证</li>
+<li>大量功能使得用户能够在任何场景想起并且重复使用</li>
+<li>问诊采用实时聊天和视频语音，响应迅速，用户习惯从微信迁移，体验高成本低</li>
+</ul>
+<h3 id="劣势-1"><a href="#劣势-1" class="headerlink" title="劣势"></a>劣势</h3><ul>
+<li>布局复杂，高低频入口无法区分，很难找到想要的功能</li>
+<li>品牌调性较差，UI无法给人留下深刻印象</li>
+</ul>
+<blockquote>
+<p>好大夫</p>
+</blockquote>
+<h3 id="优势-2"><a href="#优势-2" class="headerlink" title="优势"></a>优势</h3><ul>
+<li>以互联网医院为服务核心，用户目标感强，容易在特定场景记起并使用</li>
+<li>有特色功能，能够直接联系到医生</li>
+<li>慢病管理功能在一定程度上可以提高用户粘性和活跃</li>
+</ul>
+<h3 id="劣势-2"><a href="#劣势-2" class="headerlink" title="劣势"></a>劣势</h3><ul>
+<li>UI粗糙，用户体验一般</li>
+<li>开处方的同时没有提供购买渠道，未形成闭环</li>
+<li>聚焦于某几个场景导致其他场景无法覆盖，并且由于地域情况不同导致有些地区甚至无法提供服务</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>&emsp; 现今几乎所有的移动医疗产品都接入了问诊功能，并且都基于银川互联网医院拥有开处方能力，然而因为医疗行业的特殊性，『带着镣铐跳舞』，导致某些业务高度重合，竞争极其激烈。<br>&emsp; 三大产品如今虽然上线时间相差较多，且倾向各有不同，但都有不同的核心打法。丁香医生有着最为强大的医疗新媒体资源，拥有良好的口碑和优秀的内容；微医前身为挂号网，有刚需拳头产品，并且与政府关系紧密，基于保险和医联体平台使得其拥有三者中最强的变现能力；好大夫则是三者中历史最悠久的互联网问答产品，积攒了足够的用户，并且有三者中最为明确的定位。 由此可见，腾讯投资的三家公司各有所长。<br>&emsp; 结合我司，既我任职的公司——一呼医生。纵然在新媒体资源不如丁香医生，在医生资源上和微医和好大夫存在差距。但是也有其自身的竞争力。目前所有主流互联网医疗企业都在开拓AI在医疗领域的应用，智能导诊在未来将大有可为。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/gongzhonghao.jpg" alt="欧阳森 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>如果需要联系我，请扫描上方二维码添加我个人微信号</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/weixin.jpg" alt="欧阳森 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/zhifubao.png" alt="欧阳森 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/产品/" rel="tag"># 产品</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/13/函数式编程-不用循环的-JavaScript/" rel="next" title="[函数式编程] 不用循环的 JavaScript">
+                <i class="fa fa-chevron-left"></i> [函数式编程] 不用循环的 JavaScript
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/26/产品经理必须知道的交互设计原则/" rel="prev" title="产品经理必须知道的交互设计原则">
+                产品经理必须知道的交互设计原则 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="欧阳森" />
+            
+              <p class="site-author-name" itemprop="name">欧阳森</p>
+              <p class="site-description motion-element" itemprop="description">用心感受，用数据说话</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/OYsun" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.pmcaff.com/user/profile/OYsun" target="_blank" title="PMCAFF">
+                    
+                      <i class="fa fa-fw fa-globe"></i>PMCAFF</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.zcool.com.cn/u/13297081" target="_blank" title="站酷">
+                    
+                      <i class="fa fa-fw fa-globe"></i>站酷</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://xitu.io/" title="稀土掘金" target="_blank">稀土掘金</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.v2ex.com/" title="V2EX" target="_blank">V2EX</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.pmcaff.com" title="PMCAFF" target="_blank">PMCAFF</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#总体情况和用户分析"><span class="nav-number">1.</span> <span class="nav-text">总体情况和用户分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用场景辨析"><span class="nav-number">2.</span> <span class="nav-text">使用场景辨析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用场景："><span class="nav-number">2.1.</span> <span class="nav-text">使用场景：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决痛点："><span class="nav-number">2.2.</span> <span class="nav-text">解决痛点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用场景：-1"><span class="nav-number">2.3.</span> <span class="nav-text">使用场景：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决痛点：-1"><span class="nav-number">2.4.</span> <span class="nav-text">解决痛点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用场景：-2"><span class="nav-number">2.5.</span> <span class="nav-text">使用场景：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决痛点：-2"><span class="nav-number">2.6.</span> <span class="nav-text">解决痛点：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#功能和页面"><span class="nav-number">3.</span> <span class="nav-text">功能和页面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#功能详图"><span class="nav-number">3.1.</span> <span class="nav-text">功能详图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布局"><span class="nav-number">3.2.</span> <span class="nav-text">布局</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优劣势"><span class="nav-number">4.</span> <span class="nav-text">优劣势</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#优势"><span class="nav-number">4.1.</span> <span class="nav-text">优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#劣势"><span class="nav-number">4.2.</span> <span class="nav-text">劣势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优势-1"><span class="nav-number">4.3.</span> <span class="nav-text">优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#劣势-1"><span class="nav-number">4.4.</span> <span class="nav-text">劣势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优势-2"><span class="nav-number">4.5.</span> <span class="nav-text">优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#劣势-2"><span class="nav-number">4.6.</span> <span class="nav-text">劣势</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">欧阳森</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("6dCyt2FEmvejIrAXyvQsgrXK-gzGzoHsz", "qdXDBg5L2vpPm0ANcLmAzbah");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

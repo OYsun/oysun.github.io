@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/favicon.ico?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="web开发," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="了解函数式编程，替代循环语句。">
+<meta name="keywords" content="web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[函数式编程] 不用循环的 JavaScript">
+<meta property="og:url" content="http://web-oysun.cn/2017/11/13/函数式编程-不用循环的-JavaScript/index.html">
+<meta property="og:site_name" content="欧阳森个人博客">
+<meta property="og:description" content="了解函数式编程，替代循环语句。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-13T11:45:29.265Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[函数式编程] 不用循环的 JavaScript">
+<meta name="twitter:description" content="了解函数式编程，替代循环语句。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://web-oysun.cn/2017/11/13/函数式编程-不用循环的-JavaScript/"/>
+
+
+
+
+
+  <title>[函数式编程] 不用循环的 JavaScript | 欧阳森个人博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">欧阳森个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">渴望加入稀土掘金团队</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://web-oysun.cn/2017/11/13/函数式编程-不用循环的-JavaScript/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="欧阳森">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欧阳森个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">[函数式编程] 不用循环的 JavaScript</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T00:00:00+08:00">
+                2017-11-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web开发/" itemprop="url" rel="index">
+                    <span itemprop="name">web开发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/11/13/函数式编程-不用循环的-JavaScript/" class="leancloud_visitors" data-flag-title="[函数式编程] 不用循环的 JavaScript">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote><p>了解函数式编程，替代循环语句。</p>
+</blockquote>
+<a id="more"></a>
+<hr>
+<h2 id="循环-Loop"><a href="#循环-Loop" class="headerlink" title="循环 Loop"></a>循环 Loop</h2><p>先看看js中的基础循环代码 while</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 所有字母大写</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">capitalize</span>(<span class="params">str</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> str.replace(<span class="regexp">/[a-z]/g</span>, s =&gt; s.toUpperCase())</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> company = [</span><br><span class="line">  <span class="string">'apple'</span>,</span><br><span class="line">  <span class="string">'google'</span>,</span><br><span class="line">  <span class="string">'amazon'</span>,</span><br><span class="line">  <span class="string">'facebook'</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>使用 while 循环来大写数组中每个元素</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">0</span></span><br><span class="line"><span class="keyword">const</span> len = company.length</span><br><span class="line"><span class="keyword">const</span> newCompany = []</span><br><span class="line"><span class="keyword">while</span>(i&lt;len) &#123;</span><br><span class="line">  newCompany.push(capitalize(company[i]))</span><br><span class="line">  i++</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这种循环太常见了，一个初始值为0计数器 i ，每次循环需要递增 i 的值，并通过 len 来判断循环终止条件。<br>简单的 for 循环代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">0</span></span><br><span class="line"><span class="keyword">const</span> len = company.length</span><br><span class="line"><span class="keyword">const</span> newCompany = []</span><br><span class="line"><span class="keyword">for</span>(; i&lt;len; i++) &#123;</span><br><span class="line">  newCompany.push(capitalize(company[i]))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>比起 while for 循环把计数器 i 放在循环顶部，避免了 while 中忘记计数器自增自增而引起的死循环。</p>
+<p>但是后退一步看，我们只是要把每一项大写，但是并不在乎循环中的计数器 i</p>
+<p>因为这种对数组每一项进行循环操作的模式很常见，所以有了 ES2015 中的 for..of 循环</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> newCompany = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> company) &#123;</span><br><span class="line">  newCompany.push(capitalize(item))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>用了 for…of 省了计数器和循环终止的判断，也不需要抽取出数组每一项来处理</p>
+<h2 id="映射-Mapping"><a href="#映射-Mapping" class="headerlink" title="映射 Mapping"></a>映射 Mapping</h2><p>虽然 for…of 更简洁，但还是要初始 newCompany 并执行 push</p>
+<p>如何做到更加精简</p>
+<p>如果现在有两个数组需要 capitalize 呢</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> company = [</span><br><span class="line">  <span class="string">'apple'</span>,</span><br><span class="line">  <span class="string">'google'</span>,</span><br><span class="line">  <span class="string">'amazon'</span>,</span><br><span class="line">  <span class="string">'facebook'</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> animal = [</span><br><span class="line">  <span class="string">'dog'</span>,</span><br><span class="line">  <span class="string">'cat'</span>,</span><br><span class="line">  <span class="string">'pig'</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>两次循环 简单粗暴：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> newCompany = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> company) &#123;</span><br><span class="line">  newCompany.push(capitalize(item))</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> newAnimal = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> animal) &#123;</span><br><span class="line">  newAnimal.push(capitalize(item))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这看起来不是很 DRY (Don’t repeat yourself) ，所以可以重构下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">capitalizeArray</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> newArr = []</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> arr)&#123;</span><br><span class="line">    newArr.push(capitalize(item))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> newArr</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> newCompany = capitalizeArray(company)</span><br><span class="line"><span class="keyword">const</span> newAnimal = capitalizeArray(animal)</span><br></pre></td></tr></table></figure>
+<p>这样看起来还行，但是如果新加一个功能，只是首字母大写呢</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 首字母大写</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">capitalizeFirst</span>(<span class="params">str</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> str.replace(<span class="regexp">/( |^)[a-z]/</span>, s =&gt; s.toUpperCase())</span><br><span class="line">&#125;</span><br><span class="line">如果这样写，下面的代码依然不是很 DRY</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">capitalizeArray</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> newArr = []</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> arr)&#123;</span><br><span class="line">    newArr.push(capitalize(item))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> newArr</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">capitalizeFirstArray</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> newArr = []</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> arr)&#123;</span><br><span class="line">    newArr.push(capitalizeFirst(item))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> newArr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>那就继续重构，抽象成给定一个数组和一个函数，然后将数组中每一项映射到新的数组的模式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">map</span>(<span class="params">fn, arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> newArr = []</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> arr)&#123;</span><br><span class="line">    newArr.push(fn(item))</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> newArr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>但代码里依然有个循环，只能写成递归的形式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">map</span>(<span class="params">fn, arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(arr.length == <span class="number">0</span>) <span class="keyword">return</span> []</span><br><span class="line">  <span class="keyword">return</span> fn(arr[<span class="number">0</span>]).concat(map(fn, arr.slice(<span class="number">1</span>)))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>递归的代码极简，但在旧浏览器里有性能问题，所以我们就直接用 js 内置的 map 好了</p>
+<p>同样简单粗暴</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> newCompany        = company.map(capitalize)</span><br><span class="line"><span class="keyword">const</span> firstUpperCompany = company.map(capitalizeFirst)</span><br><span class="line"><span class="keyword">const</span> newAnimal         = animal.map(capitalize)</span><br><span class="line"><span class="keyword">const</span> firstUpperAnimal  = animal.map(capitalizeFirst)</span><br></pre></td></tr></table></figure>
+<p>像函数式编程一样，分而治之，两个用来做大写字符串的函数只关注本身的功能，不关心数据从哪来；同时 map 只负责传递函数，不关心函数是干什么的。</p>
+<h2 id="Reduce"><a href="#Reduce" class="headerlink" title="Reduce"></a>Reduce</h2><p>map 在输出和输入的相同长度的数组上很好用。</p>
+<p>但是如果再添加一个数字数组或者在一个 list 中找出最短的字符串呢。</p>
+<p>如下，有个 worker 的数组，包含姓名和薪水</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> workers = [</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Jack'</span>, <span class="attr">salary</span>: <span class="number">1000</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Tony'</span>, <span class="attr">salary</span>: <span class="number">2000</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Lily'</span>, <span class="attr">salary</span>: <span class="number">3000</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Sara'</span>, <span class="attr">salary</span>: <span class="number">4000</span> &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>找出 salary 最高的那位</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> highestSalary = &#123; <span class="attr">salary</span>: <span class="number">0</span> &#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> w <span class="keyword">of</span> workers) &#123;</span><br><span class="line">  <span class="keyword">if</span>(w.salary &gt; highestSalary.salary) &#123;</span><br><span class="line">    highestSalary = w</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的代码那样写也没什么问题。为了深入一点，我们现在需要所有人 salary 的总和，代码如下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> sumSalary = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> w <span class="keyword">of</span> workers) &#123;</span><br><span class="line">  sumSalary += w.salary</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面两个例子中都需要在循环之前定义一个变量，然后在每次循环中处理一个循环项后并更新这个变量。</p>
+<p>为了深入理解这个循环，我们把循环内部拆解为函数，找出相似之处</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// slary 对比</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greaterSlary</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> a.salary &gt; b.salary ? a : b</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addSalary</span>(<span class="params">sum, worker</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> sum + worker.salary</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> initialHighest = &#123; <span class="attr">slary</span>: <span class="number">0</span> &#125;</span><br><span class="line"><span class="keyword">let</span> temp = initialHighest</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> w <span class="keyword">of</span> workers) &#123;</span><br><span class="line">  temp = greaterSlary(temp, w)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> highestSalary = temp</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> initialSumSalary = <span class="number">0</span></span><br><span class="line">temp = initialSumSalary</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> w <span class="keyword">of</span> workers) &#123;</span><br><span class="line">  temp = addSalary(temp, w)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> sumSalary = temp</span><br></pre></td></tr></table></figure>
+<p>上面的代码两个循环非常相似，唯一不同的是初始值和循环中的调用的函数。两者都将数组最终降为单个值，所以我们自己写</p>
+<h2 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">reduce</span>(<span class="params">fn, initial, arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> temp = initial</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> arr) &#123;</span><br><span class="line">    temp = fn(temp, item)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> temp</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>但是 js 里面内置了 reduce ，我们直接拿来用就行了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> highestSalary = workers.reduce(greaterSlary, &#123;<span class="attr">slary</span>: <span class="number">0</span>&#125;)</span><br><span class="line"><span class="keyword">const</span> sumSalary = workers.reduce(addSalary, <span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<p>使用了原生的 reduce 分离了循环代码后，代码的复杂度降低了很多。</p>
+<h2 id="Filter"><a href="#Filter" class="headerlink" title="Filter"></a>Filter</h2><p>map 可以很好的处理数组的每一项 reduce 可以把一个数组缩减到一个单一值</p>
+<p>但是想处理一个数组中的多个项目呢？首先给 workers 数组加点数据</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> workers = [</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Jack'</span>, <span class="attr">salary</span>: <span class="number">1000</span>, <span class="attr">gender</span>:<span class="string">'m'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Tony'</span>, <span class="attr">salary</span>: <span class="number">2000</span>, <span class="attr">gender</span>:<span class="string">'m'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Lucy'</span>, <span class="attr">salary</span>: <span class="number">2500</span>, <span class="attr">gender</span>:<span class="string">'f'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Lily'</span>, <span class="attr">salary</span>: <span class="number">3000</span>, <span class="attr">gender</span>:<span class="string">'f'</span> &#125;,</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Sara'</span>, <span class="attr">salary</span>: <span class="number">4000</span>, <span class="attr">gender</span>:<span class="string">'f'</span>, &#125;</span><br><span class="line">  &#123; <span class="attr">name</span>: <span class="string">'Kaka'</span>, <span class="attr">salary</span>: <span class="number">5000</span>, <span class="attr">gender</span>:<span class="string">'m'</span> &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>两个问题：</p>
+<p>找出所有的女性<br>找出 salary 大于 2500 的所有 worker<br>用个普通的 for 循环：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> femaleWorkers = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> w <span class="keyword">of</span> workers) &#123;</span><br><span class="line">  <span class="keyword">if</span>(w.gender == <span class="string">'f'</span>) &#123;</span><br><span class="line">    femaleWorkers.push(w)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> highSalaryWorkers = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> w <span class="keyword">of</span> workers) &#123;</span><br><span class="line">  <span class="keyword">if</span>(w.salary &gt; <span class="number">2500</span>) &#123;</span><br><span class="line">    highSalaryWorkers.push(w)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面两块代码唯一不同的是 if 判断，所以把 if 转换成函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isFemale</span>(<span class="params">worker</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> worker.gender === <span class="string">'f'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isHighSlary</span>(<span class="params">worker</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> worker.salary &gt; <span class="number">2500</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> femaleWorkers = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> w <span class="keyword">of</span> workers) &#123;</span><br><span class="line">  <span class="keyword">if</span>(isFemale(w)) &#123;</span><br><span class="line">    femaleWorkers.push(w)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> highSalaryWorkers = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> w <span class="keyword">of</span> workers) &#123;</span><br><span class="line">  <span class="keyword">if</span>(isHighSlary(w)) &#123;</span><br><span class="line">    highSalaryWorkers.push(w)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们在把这种只返回 true false 的函数成为 predicate （谓词函数） 然后使用 predicate 来决定数组中元素是否保留</p>
+<p>把 predicate 函数抽象到一个 filter 中</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">filter</span>(<span class="params">predicate, arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> temp = []</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> arr) &#123;</span><br><span class="line">    <span class="keyword">if</span>(predicate(item)) &#123;</span><br><span class="line">      temp = temp.concat(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> temp</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> femaleWorkers = filter(isFemale, workers)</span><br><span class="line"><span class="keyword">const</span> highSalaryWorkers = filter(isHighSlary, workers)</span><br></pre></td></tr></table></figure>
+<p>同样 js 也内置了 filter 函数，直接使用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> femaleWorkers = workers.filter(isFemale)</span><br><span class="line"><span class="keyword">const</span> highSalaryWorkers = workers.filter(isHighSlary)</span><br></pre></td></tr></table></figure>
+<p>只需要写一个功能单一而专注的过滤函数，然后调用 filter 即可。</p>
+<h2 id="Find"><a href="#Find" class="headerlink" title="Find"></a>Find</h2><p>如果需要找出 Sara ，filter 是没问题的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isSara</span>(<span class="params">worker</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> worker.name === <span class="string">'Sara'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Sara = workers.filter(isSara)[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+<p>这样的代码并不高效，因为只有一个 Sara ，找到后就可以停止查找操作了。</p>
+<p>所以写一个 find 函数， 返回第一个符合项</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">find</span>(<span class="params">predicate, arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> item <span class="keyword">of</span> arr) &#123;</span><br><span class="line">    <span class="keyword">if</span>(predicate(item)) &#123;</span><br><span class="line">      <span class="keyword">return</span> item</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Sara = find(isSara, workers)</span><br></pre></td></tr></table></figure>
+<p>find 函数实现非常简单，js 也内置了 find</p>
+<p>const Sara = workers.find(isSaraworkers)<br>和 filter 一样，代码简洁且专注。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>使用内置的这些迭代函数</p>
+<p>减少循环结构，代码更简洁易读<br>函数名更具有语义化 map reduce filter find<br>关注点从整个数组转为我们关心的每一项上<br>在上面每一个例子中，我们把问题分解，使用更小而纯粹的函数即可找到解决方案。</p>
+<p>因为循环中总是在处理或者构建一个数组，或者两者同时在做，因此通过 js 内置的数组处理函数几乎可以消除代码中绝大多数循环，写出复杂性更低更利于维护的代码。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/gongzhonghao.jpg" alt="欧阳森 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>如果需要联系我，请扫描上方二维码添加我个人微信号</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/weixin.jpg" alt="欧阳森 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/zhifubao.png" alt="欧阳森 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/web开发/" rel="tag"># web开发</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/12/YY产品体验报告/" rel="next" title="YY产品体验报告">
+                <i class="fa fa-chevron-left"></i> YY产品体验报告
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/17/腾讯布局移动医疗浅析/" rel="prev" title="腾讯布局移动医疗浅析">
+                腾讯布局移动医疗浅析 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="欧阳森" />
+            
+              <p class="site-author-name" itemprop="name">欧阳森</p>
+              <p class="site-description motion-element" itemprop="description">用心感受，用数据说话</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/OYsun" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.pmcaff.com/user/profile/OYsun" target="_blank" title="PMCAFF">
+                    
+                      <i class="fa fa-fw fa-globe"></i>PMCAFF</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.zcool.com.cn/u/13297081" target="_blank" title="站酷">
+                    
+                      <i class="fa fa-fw fa-globe"></i>站酷</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://xitu.io/" title="稀土掘金" target="_blank">稀土掘金</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.v2ex.com/" title="V2EX" target="_blank">V2EX</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.pmcaff.com" title="PMCAFF" target="_blank">PMCAFF</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#循环-Loop"><span class="nav-number">1.</span> <span class="nav-text">循环 Loop</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#映射-Mapping"><span class="nav-number">2.</span> <span class="nav-text">映射 Mapping</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reduce"><span class="nav-number">3.</span> <span class="nav-text">Reduce</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reduce"><span class="nav-number">4.</span> <span class="nav-text">reduce</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Filter"><span class="nav-number">5.</span> <span class="nav-text">Filter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Find"><span class="nav-number">6.</span> <span class="nav-text">Find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后"><span class="nav-number">7.</span> <span class="nav-text">最后</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">欧阳森</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("6dCyt2FEmvejIrAXyvQsgrXK-gzGzoHsz", "qdXDBg5L2vpPm0ANcLmAzbah");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

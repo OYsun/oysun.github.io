@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/favicon.ico?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="web开发," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一些日常使用npm的技巧分享">
+<meta name="keywords" content="web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="十个NPM技巧">
+<meta property="og:url" content="http://web-oysun.cn/2017/09/13/是个NPM技巧/index.html">
+<meta property="og:site_name" content="欧阳森个人博客">
+<meta property="og:description" content="一些日常使用npm的技巧分享">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-13T11:03:13.212Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="十个NPM技巧">
+<meta name="twitter:description" content="一些日常使用npm的技巧分享">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://web-oysun.cn/2017/09/13/是个NPM技巧/"/>
+
+
+
+
+
+  <title>十个NPM技巧 | 欧阳森个人博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">欧阳森个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">渴望加入稀土掘金团队</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://web-oysun.cn/2017/09/13/是个NPM技巧/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="欧阳森">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欧阳森个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">十个NPM技巧</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-13T00:00:00+08:00">
+                2017-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web开发/" itemprop="url" rel="index">
+                    <span itemprop="name">web开发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/09/13/是个NPM技巧/" class="leancloud_visitors" data-flag-title="十个NPM技巧">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote><p>一些日常使用npm的技巧分享</p>
+</blockquote>
+<a id="more"></a>
+<hr>
+<p>对于一个项目，常用的一些npm简单命令包含的功能有：初始化一个文件夹( npm init )，下载npm模块( npm install )，创建测试( npm test ) 和自定义脚本( npm run )。但是，进一步了解一些 npm 的使用技巧可以彻底改变你的日常开发任务。</p>
+<h2 id="1-获取帮助"><a href="#1-获取帮助" class="headerlink" title="1. 获取帮助"></a>1. 获取帮助</h2><p>npm 文档 和 CLI 命令行文档 是非常不错地的学习资料，但需要通过浏览器访问，这并不是很方便。因而可以通过命令行快速获取所有可选项：</p>
+<p>npm help<br>此外，还能获取特定 npm 命令的使用帮助：</p>
+<p>npm help <command><br>例如：npm help install</p>
+<p>另一种方式是通过下面的命令：</p>
+<p>npm <command> -h</p>
+<h2 id="2-npm-命令自动完成"><a href="#2-npm-命令自动完成" class="headerlink" title="2. npm 命令自动完成"></a>2. npm 命令自动完成</h2><p>npm 通过bash提供了命令自动完成功能(包括 Bash for Windows 10 ):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm completion &gt;&gt; ~/.bashrc</span><br><span class="line"></span><br><span class="line">//or Z shell</span><br><span class="line"></span><br><span class="line">npm completion &gt;&gt; ~/.zshrc</span><br></pre></td></tr></table></figure>
+<p>重新加载shell配置文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
+<p>现在，在终端注入 <code>npm ins</code> ，然后按下 tab 键就会出现 install 了，不会再浪费时间去全部输入了。</p>
+<h2 id="3-修复全局模块的权限"><a href="#3-修复全局模块的权限" class="headerlink" title="3.修复全局模块的权限"></a>3.修复全局模块的权限</h2><p>当你试图安装全部模块时，类 Linux 系统可能会抛出权限错误，可以在npm命令之前添加 sudo 来执行，但这是一个较危险的选择。一个更高的解决方式是改变 npm 默认的模块安装目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.npm-global</span><br><span class="line">npm config set prefix &apos;~/.npm-global&apos;</span><br></pre></td></tr></table></figure>
+<p>使用适当的文本编辑器将下面的一行添加到 ~/.bashrc 或者 ~/.zshrc 文件中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;$HOME/.npm-global/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+<p>重新加载配置文件(source ~/.bashrc)，然后重新安装npm到用户所属路径：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm</span><br></pre></td></tr></table></figure>
+<p>这也会更新npm。</p>
+<h2 id="4-持续更新npm"><a href="#4-持续更新npm" class="headerlink" title="4.持续更新npm"></a>4.持续更新npm</h2><p>你可以通过下面的命令显示npm当前的版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p>如果有需要，可以通过下面的命令更新npm：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm</span><br></pre></td></tr></table></figure>
+<p>当 Node 的主版本 released 之后，你也可能需要重新构建 C++ 扩展：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm rebuild</span><br></pre></td></tr></table></figure>
+<p>如果你需要管理多个版本的node.js和npm，可以考虑使用 n 或者 nvm。</p>
+<h2 id="5-定义默认的-npm-init"><a href="#5-定义默认的-npm-init" class="headerlink" title="5.定义默认的 npm init"></a>5.定义默认的 npm init</h2><p>使用 npm init 初始化一个新的项目，这会提示你关于项目的更多细节，并创建一个 package.json 文件。</p>
+<p>如果你厌倦了每次开始一个新的项目都需要重新输入同样的信息，可以使用 -y 标记表示你能接受 package.json 文件的一堆默认值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init -y</span><br></pre></td></tr></table></figure>
+<p>或者你可以设置一些语义化的默认值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set init.author.name &lt;name&gt;</span><br><span class="line">npm config set init.author.email &lt;email&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="6-更精准的模块搜索"><a href="#6-更精准的模块搜索" class="headerlink" title="6.更精准的模块搜索"></a>6.更精准的模块搜索</h2><p>到目前为止，npm上已经有超过350000个模块了，并且每天还在持续增长。尽管有很多非常棒的模块，但是你还是想避免使用一些不受欢迎的、存在bug的或者无人维护的模块。在 npmjs 和 Github 上搜索npm模块是很实用但这还有一些其它选择：</p>
+<ul>
+<li>npms</li>
+</ul>
+<p>npms 根据一个基于项目版本、模块下载次数、最新更新日期、提交频率、测试覆盖率、文档、贡献者数量、issues数、star数、forks数和作者在社区的地位的综合测量分数进行模块排名。</p>
+<ul>
+<li>npm Discover</li>
+</ul>
+<p>npm Discover 定位于快速搜索和其它模块通常一起使用的模块，如 body-parser 通常和Express一起使用。</p>
+<ul>
+<li>Packages by PageRank</li>
+</ul>
+<p>Packages by PageRank 按照模块的谷歌排名进行搜索和排序。</p>
+<ul>
+<li>Curated npm Lists</li>
+</ul>
+<p>还一个选择就是利用别人的搜索结果。当需要一个健壮的解决方案时，我经常会参考 sindresorhus 的 Awesome Node.js。</p>
+<h2 id="7-管理你的模块"><a href="#7-管理你的模块" class="headerlink" title="7.管理你的模块"></a>7.管理你的模块</h2><p>你已经安装了一些模块，看看都有啥：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list</span><br></pre></td></tr></table></figure>
+<p>(ls、la &amp; ll 可以用作 list 的别名)</p>
+<p>该命令会显示所有模块：(安装的)模块，子模块以及子模块的子模块等。可以限制输出的模块层级：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list --depth=0</span><br></pre></td></tr></table></figure>
+<p>打开一个模块的主页：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm home &lt;package&gt;</span><br></pre></td></tr></table></figure>
+<p>这只有在你的系统能打开浏览器时有用–在服务端的系统上会失败。同样，可以打开一个模块的 Github 仓库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm repo &lt;package&gt;</span><br></pre></td></tr></table></figure>
+<p>或者它的文档：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm docs &lt;package&gt;</span><br></pre></td></tr></table></figure>
+<p>或者它目前的bugs列表：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm bugs &lt;package&gt;</span><br></pre></td></tr></table></figure>
+<p><code>npm list</code> 会显示和你已经安装地模块的关联模块—这些没有在 package.json文件中被引用。你可以单独 <code>npm uninstall</code>每一个模块或者全部移除它们：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm prune</span><br></pre></td></tr></table></figure>
+<p>如果安装模块时你添加了 –production 标记或者 NODE_ENV 被设置成 production，package.json 文件中被指定为 devDependencies 的模块也会被移除。</p>
+<h2 id="8-锁定依赖"><a href="#8-锁定依赖" class="headerlink" title="8.锁定依赖"></a>8.锁定依赖</h2><p>默认情况下，当用 –save/-S 或者 –save-dev/-D 安装一个模块时，npm 通过脱字符(^)来限定所安装模块的主版本号。例如，当运行 npm update 时， ^1.5.1 允许安装版本号大于 1.5.1 但小于 2.0.0 版本的模块。</p>
+<p>波浪号(~)字符是限定模块的次要版本。例如，当运行 npm update 时， ~1.5.1 允许安装版本号大于 1.5.1 但小于 1.6.0 版本的模块。可以将需要安装的模块版本前缀默认设置成波浪号(~):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set save-prefix=&quot;~&quot;</span><br></pre></td></tr></table></figure>
+<p>对于那些偏执的认为任何更新(模块的行为)会破坏系统的人，可以配置npm仅安装精确版本号的模块：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set save-exact true</span><br></pre></td></tr></table></figure>
+<p>另一个选择是，可以在项目中使用 shrinkwrap:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm shrinkwrap</span><br></pre></td></tr></table></figure>
+<p>这会生成一个 shrinkwrap.json 文件，该文件包含了你正在使用的模块的指定版本。当运行 npm install 时，该文件所指定的模块版本会覆盖 package.json 文件中所指定的版本。</p>
+<h2 id="9-找出过时的模块"><a href="#9-找出过时的模块" class="headerlink" title="9. 找出过时的模块"></a>9. 找出过时的模块</h2><p>怎么知道一个模块已经更新了呢？我之前的方式是先列举出项目所依赖的模块(npm list –depth=0)，然后在 npmjs.com 上找到该模块，手动检查该模块的版本是否已经更新。这非常费时。幸运的是，有一个更简单的方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm outdated</span><br></pre></td></tr></table></figure>
+<p>或者 npm outdated -g 来查找全局模块。</p>
+<p>你也可以查看一个独立模块的当前版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list &lt;package&gt;</span><br></pre></td></tr></table></figure>
+<p>也可以查看检验当前和历史版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm view &lt;package&gt; versions</span><br></pre></td></tr></table></figure>
+<p>npm view <package> 会显示一个独立模块的所有信息，包括它的依赖、关键字、更新日期、贡献者、仓库地址和许可证等。</package></p>
+<h2 id="10-使用开发中的模块"><a href="#10-使用开发中的模块" class="headerlink" title="10.使用开发中的模块"></a>10.使用开发中的模块</h2><p>当你正在开发一个模块时，会经常想在其它项目中尝试使用或者在任何一个目录运行它(如果你的应用支持)，这时没必要将其发布到 npm，并全局安装—仅需在该模块所在目录使用下面的命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npn link</span><br></pre></td></tr></table></figure>
+<p>该命令会为模块在全局目录下创建一个符号链接。可以通过下面的命令查看模块引用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm list -g --depth=0</span><br></pre></td></tr></table></figure>
+<p>或者：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm outdated -g</span><br></pre></td></tr></table></figure>
+<p>现在，就可以从命令行运行模块或者通过 require 在任何项目中引入该模块。</p>
+<p>另一个选择是，可以通过文件路径在 package.json 文件中声明对该模块的依赖：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line">  &quot;myproject&quot;: &quot;file:../myproject/&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/gongzhonghao.jpg" alt="欧阳森 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>如果需要联系我，请扫描上方二维码添加我个人微信号</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/weixin.jpg" alt="欧阳森 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/zhifubao.png" alt="欧阳森 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/web开发/" rel="tag"># web开发</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/11/新媒体运营内容工具篇/" rel="next" title="新媒体运营——内容（工具篇）">
+                <i class="fa fa-chevron-left"></i> 新媒体运营——内容（工具篇）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/13/新媒体运营内容标题篇/" rel="prev" title="新媒体运营——内容（标题篇）">
+                新媒体运营——内容（标题篇） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="欧阳森" />
+            
+              <p class="site-author-name" itemprop="name">欧阳森</p>
+              <p class="site-description motion-element" itemprop="description">用心感受，用数据说话</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/OYsun" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.pmcaff.com/user/profile/OYsun" target="_blank" title="PMCAFF">
+                    
+                      <i class="fa fa-fw fa-globe"></i>PMCAFF</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.zcool.com.cn/u/13297081" target="_blank" title="站酷">
+                    
+                      <i class="fa fa-fw fa-globe"></i>站酷</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://xitu.io/" title="稀土掘金" target="_blank">稀土掘金</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.v2ex.com/" title="V2EX" target="_blank">V2EX</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.pmcaff.com" title="PMCAFF" target="_blank">PMCAFF</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-获取帮助"><span class="nav-number">1.</span> <span class="nav-text">1. 获取帮助</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-npm-命令自动完成"><span class="nav-number">2.</span> <span class="nav-text">2. npm 命令自动完成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-修复全局模块的权限"><span class="nav-number">3.</span> <span class="nav-text">3.修复全局模块的权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-持续更新npm"><span class="nav-number">4.</span> <span class="nav-text">4.持续更新npm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-定义默认的-npm-init"><span class="nav-number">5.</span> <span class="nav-text">5.定义默认的 npm init</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-更精准的模块搜索"><span class="nav-number">6.</span> <span class="nav-text">6.更精准的模块搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-管理你的模块"><span class="nav-number">7.</span> <span class="nav-text">7.管理你的模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-锁定依赖"><span class="nav-number">8.</span> <span class="nav-text">8.锁定依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-找出过时的模块"><span class="nav-number">9.</span> <span class="nav-text">9. 找出过时的模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-使用开发中的模块"><span class="nav-number">10.</span> <span class="nav-text">10.使用开发中的模块</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">欧阳森</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("6dCyt2FEmvejIrAXyvQsgrXK-gzGzoHsz", "qdXDBg5L2vpPm0ANcLmAzbah");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
